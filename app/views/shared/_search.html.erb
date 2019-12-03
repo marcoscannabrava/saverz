@@ -1,0 +1,18 @@
+<div class="search position-relative">
+  <%= form_tag kitchens_path, method: :get do %>
+    <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "FIND YOUR RESEARCH FIELD" %>
+    <%= button_tag(type: "submit", class: "search-btn p-0 btn btn-light position-absolute") do %>
+      <i class="fas fa-search"></i>
+    <% end %>
+  <% end %>
+</div>
+
+
+<% if false %>
+  <input class="form-control" type="text" placeholder="FIND YOUR RESEARCH FIELD" aria-label="Search">
+  <button type="button" class="p-0 btn btn-light position-absolute">
+  </button>
+  <%= submit_tag "", class: "search-btn p-0 btn btn-light position-absolute" do %>
+    <i class="fas fa-search"></i>
+  <% end %>
+<% end%>

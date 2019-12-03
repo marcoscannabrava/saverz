@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       root to: "user/dashboards#show"
     end
   end
-  root to: 'pages#home'
+  root to: 'user/dashboards#show'
 
   # Abstract controller
   resources :field_choices, only: [ :new, :create ]

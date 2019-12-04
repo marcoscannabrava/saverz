@@ -3,25 +3,8 @@
 
 
 <div class="row grid p-5">
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <%= render partial: "shared/card" %>
-  <% #, locals: {zone: @zone}  %>
+
+<% @fields.each do |field| %>
+  <%= render partial: "shared/card", locals: {field: field}  %>
+  <% end %>
 </div>

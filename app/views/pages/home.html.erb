@@ -1,10 +1,7 @@
 <%= render 'shared/banner' %>
 
-
-
 <div class="row grid p-5">
-
-<% @fields.each do |field| %>
-  <%= render partial: "shared/card", locals: {field: field}  %>
+  <% @fields.each do |field| %>
+    <%= render partial: "shared/card", locals: {field: field}  %>
   <% end %>
 </div>

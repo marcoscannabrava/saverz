@@ -1,7 +1,7 @@
 class FieldChoicesController < ApplicationController
-  def new
-  end
-
   def create
+    current_user.field = Field.find(params[:field_id])
+    current_user.save
+    redirect_to "/dashboard"
   end
 end

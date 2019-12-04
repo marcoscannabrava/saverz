@@ -1,0 +1,70 @@
+<div class="cupons d-flex bd-highlight mb-3">
+  <div class= "card-discount p-2 bd-highlight font-weight-bold text-center">
+    <p>%{}</p>
+    <p>OFF</p>
+  </div>
+  <div class= "card-body p-2 bd-highlight">
+    <h4 class="card-title">Get ${api} Discount </h4>
+    <p class="card-description d-flex justify-content-between">${API coupon Description}</p>
+  </div>
+  <div class="button ml-auto p-2 bd-hig hlight">
+    <button type="button" class="btn" data-toggle="modal" data-target="#discountModal">
+    Show Discount
+    </button>
+  </div>
+</div>
+
+<div class="cupons d-flex bd-highlight mb-3">
+  <div class= "card-discount p-2 bd-highlight font-weight-bold text-center">
+    <p>%{}</p>
+    <p>OFF</p>
+  </div>
+  <div class= "card-body p-2 bd-highlight">
+    <h4 class="card-title">Get ${api} Discount </h4>
+    <p class="card-description d-flex justify-content-between">${API coupon Description}</p>
+  </div>
+  <div class="button ml-auto p-2 bd-hig hlight">
+    <button type="button" class="btn" data-toggle="modal" data-target="#discountModal">
+    Show Discount
+    </button>
+  </div>
+</div>
+
+<div class="cupons d-flex bd-highlight mb-3">
+  <div class= "card-discount p-2 bd-highlight font-weight-bold text-center">
+    <p>%{}</p>
+    <p>OFF</p>
+  </div>
+  <div class= "card-body p-2 bd-highlight">
+    <h4 class="card-title">Get ${api} Discount </h4>
+    <p class="card-description d-flex justify-content-between">${API coupon Description}</p>
+  </div>
+  <div class="button ml-auto p-2 bd-hig hlight">
+    <button type="button" class="btn" data-toggle="modal" data-target="#discountModal">
+    Show Discount
+    </button>
+  </div>
+</div>
+
+
+<div class="modal fade" id="discountModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="icon text-danger">
+          <img src="" class="img-thumbnail">
+        </div>
+        <div class="notice">
+          <h4>Get ${api} Discount</h4>
+          <p>Copy the coupon to past at the cart and save.</p>
+
+          <p><span class="badge badge-info">${API}</span> <button type="button" class="btn btn-danger">Copy</button></p>
+        </div>
+        <div class="store"></div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <%= link_to 'Go to the store', 'http://google.com', class: 'btn btn-danger', target: :blank %>
+      </div>
+    </div>
+  </div>
+</div>

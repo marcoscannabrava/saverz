@@ -1,1 +1,16 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# $averZ
+> **First Codebase**
+
+![$averZ Logo](/app/assets/images/logo.png)
+
+### Setup
+- Run the following commands
+> bundle && yarn
+> rails db:drop db:create db:migrate db:seed
+> rake company:update_all
+> rake coupon:update_all
+
+
+### Features
+- Scrape Discount Coupons From An Affiliate Program API 
+- Automatically Redirect To E-Commerce Stores With Affiliate Tracking Links

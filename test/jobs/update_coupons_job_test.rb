@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ZanoxProductsJobTest < ActiveJob::TestCase
+class UpdateCouponsJobTest < ActiveJob::TestCase
   # test "the truth" do
   #   assert true
   # end

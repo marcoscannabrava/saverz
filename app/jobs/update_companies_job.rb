@@ -2,7 +2,6 @@ class UpdateCompaniesJob < ApplicationJob
   queue_as :default
 
   def perform
-    # start_date format = YYYY-MM-DD
     # URL below gets all programs from BR starting after start_date
     api_key = ENV['ZANOX_API_KEY']
     programs_api = "http://api.zanox.com/json/2011-03-01/programs?hasproducts=true&region=BR&connectid=#{api_key}"

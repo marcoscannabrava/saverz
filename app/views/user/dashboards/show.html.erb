@@ -1,22 +1,18 @@
-<!-- Page Content -->
-<div style="height: 60px;"></div>
-
 <!-- Supported Cause  -->
-
-<div class="container">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="<%= @field.photo %>" class="card-img img-thumbnail" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h2 class="card-title">Research Field Supported:
-          <br>
-          <%= @field.name %></h2>
-        <p class="card-text"><%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!".truncate(100) %></p>
-        <a class="btn btn-primary btn-lg" href="/">Change Research Field Supported &raquo;</a>
+<div class="container bootstrap-field-container">
+  <div class="field-container">
+      <div class="field-image mr-3">
+        <img src="<%= @field.photo %>" class="card-img img-thumbnail" alt="...">
+        <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
       </div>
-    </div>
+      <div class="field-description">
+        <div class="card-body">
+          <h3 class="card-title">Research Field Supported:
+            <br>
+            <%= @field.name %></h2>
+          <p class="card-text"><%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!".truncate(100) %></p>
+        </div>
+      </div>
   </div>
 </div>
 

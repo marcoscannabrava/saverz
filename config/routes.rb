@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     end
   end
   root to: 'pages#home'
-  get '/test', to: 'companies#show'
+  get '/test', to: 'coupons#index'
 
   get 'dashboard', to: "user/dashboards#show"
 

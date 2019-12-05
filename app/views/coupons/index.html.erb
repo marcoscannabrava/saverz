@@ -1,2 +1,13 @@
 <h1>Coupons#index</h1>
 <p>Find me in app/views/coupons/index.html.erb</p>
+
+<%# ----------- TESTING PURPOSES ----------- %>
+<div class="row grid p-5">
+  <% @coupons.each do |coupon| %>
+    <div class="container">
+      <p><%= coupon.title %></p>
+      <p><%= coupon.code %></p>
+      <p><%= Company.find(coupon.company_id).name %></p>
+    </div>
+  <% end %>
+</div>

@@ -1,5 +1,8 @@
 Field.destroy_all
-un_goals = [
+Company.destroy_all
+Coupon.destroy_all
+
+un_goals = [ 
   ["No Poverty", "app/assets/images/un-goal01.jpg"],
   ["Zero Hunger", "app/assets/images/un-goal02.jpg"],
   ["Good Health and Well-being", "app/assets/images/un-goal03.jpg"],
@@ -18,6 +21,7 @@ un_goals = [
   ["Peace, Justice, and Strong Institutions", "app/assets/images/un-goal16.jpg"],
   ["Partnerships for the Goals" "app/assets/images/un-goal17.jpg"],
 ]
+
 un_goals.each do |goal|
   Field.create!(name: goal[0], remote_photo_url: goal[1])
 end

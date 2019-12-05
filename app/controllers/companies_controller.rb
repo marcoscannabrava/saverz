@@ -1,5 +1,6 @@
 class CompaniesController < ApplicationController
   def show
-    @companies = Company.all
+    @company = Company.find(params[:id])
+    @coupons = Coupon.where(company_id: @company)
   end
 end

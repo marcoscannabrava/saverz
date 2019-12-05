@@ -26,4 +26,14 @@
   <h1 class="text-muted pt-5 pb-3">MY COMPANIES</h1>
 </div>
 
-<%= render 'companies/companies_cards' %>
+<div class="company-list">
+  <%= render 'companies/companies_cards' %>
+</div>
+
+<style>
+    .company-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+</style>

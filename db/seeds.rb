@@ -1,3 +1,5 @@
+Coupon.destroy_all
+Company.destroy_all
 Field.destroy_all
 Company.destroy_all
 Coupon.destroy_all

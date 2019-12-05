@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     end
   end
   root to: 'pages#home'
+  get '/stores/update', to: 'companies#create'
 
   # Abstract controller
   resources :field_choices, only: [ :new, :create ]

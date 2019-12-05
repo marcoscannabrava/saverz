@@ -77,6 +77,9 @@
 
 <!-- Supported Cause  -->
     <div class="row grid">
+      <%
+=begin%>
+ <%= render partial: "shared/card" %>
       <%= render partial: "shared/card" %>
       <%= render partial: "shared/card" %>
       <%= render partial: "shared/card" %>
@@ -87,8 +90,9 @@
       <%= render partial: "shared/card" %>
       <%= render partial: "shared/card" %>
       <%= render partial: "shared/card" %>
-      <%= render partial: "shared/card" %>
-      <%= render partial: "shared/card" %>
+      <%= render partial: "shared/card" %> 
+<%
+=end%>
       <% #, locals: {zone: @zone}  %>
     </div>
     <!-- /.row -->

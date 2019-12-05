@@ -2,6 +2,9 @@
 
 <div class="row grid p-5">
   <% @fields.each do |field| %>
-    <%= render partial: "shared/card", locals: {field: field}  %>
+    <%= link_to "#{field_choices_path}?field_id=#{field.id}", method: :post do %>
+      <%= render "shared/card", field: field %>
+    <% end %>
   <% end %>
 </div>
+

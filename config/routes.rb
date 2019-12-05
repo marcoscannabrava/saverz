@@ -3,10 +3,12 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     authenticated :user do
-      root to: "user/dashboards#show"
+      # root to: "user/dashboards#show"
     end
   end
   root to: 'pages#home'
+
+  get 'dashboard', to: "user/dashboards#show"
 
   # Abstract controller
   resources :field_choices, only: [ :new, :create ]

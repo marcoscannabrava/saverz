@@ -1,0 +1,23 @@
+.field-image {
+  width: 10%;
+  height: 10%;
+}
+
+.field-description {
+  width: 40%;
+  border-left: 1px solid gray;
+}
+
+.field-container {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bootstrap-field-container {
+  margin: 0 0;
+}
+
+.btn.btn-primary.btn-sm {
+  width: 100%;
+}

@@ -1,31 +1,21 @@
 <!-- Page Content -->
 <div style="height: 60px;"></div>
-<div class="container py-5">
 
 <!-- Supported Cause  -->
-<div class="row">
-  <div class="col-md-8 mb-5">
-    <h2>Research Field Supported: <%= @field.name %></h2>
-    <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-    <a class="btn btn-primary btn-lg" href="/">Change Research Field Supported &raquo;</a>
-  </div>
-  <div class="col-md-4 mb-5">
-    <h2>Contact Us</h2>
-    <hr>
-    <address>
-      <strong>Start Bootstrap</strong>
-      <br>3481 Melrose Place
-      <br>Beverly Hills, CA 90210
-      <br>
-    </address>
-    <address>
-      <abbr title="Phone">P:</abbr>
-      (123) 456-7890
-      <br>
-      <abbr title="Email">E:</abbr>
-      <a href="mailto:#">name@example.com</a>
-    </address>
+
+<div class="container">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="<%= @field.photo %>" class="card-img img-thumbnail" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h2 class="card-title">Research Field Supported:
+          <br>
+          <%= @field.name %></h2>
+        <p class="card-text"><%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!".truncate(100) %></p>
+        <a class="btn btn-primary btn-lg" href="/">Change Research Field Supported &raquo;</a>
+      </div>
+    </div>
   </div>
 </div>
-

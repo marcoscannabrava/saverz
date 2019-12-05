@@ -1,7 +1,11 @@
 <h1>Companies#show</h1>
 <p>Find me in app/views/companies/show.html.erb</p>
 
+
+<%# ----------- TESTING PURPOSES ----------- %>
 <div class="row grid p-5">
   <% @companies.each do |company| %>
     <%= cl_image_tag company.logo, class: "un-img-card" %>
   <% end %>
+</div>
+

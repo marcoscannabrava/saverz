@@ -1,4 +1,6 @@
 Field.destroy_all
+Company.destroy_all
+Coupon.destroy_all
 
 un_goals = [ 
   ["No Poverty", "app/assets/images/un-goal01.jpg"],

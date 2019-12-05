@@ -1,0 +1,9 @@
+  <div class="row grid p-5 img-fluid">
+  <% @companies.each do |company| %>
+    <div class="company-card" >
+      <%= link_to company_path(company.id), class: "company-image" do %>
+        <img id="main-photo" src="<%= company.logo %>">
+      <% end %>
+    </div>
+  <% end %>
+</div>

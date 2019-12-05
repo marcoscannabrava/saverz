@@ -21,5 +21,3 @@ un_goals = [
 un_goals.each do |goal|
   Field.create!(name: goal[0], remote_photo_url: goal[1])
 end
-Coupon.create(title: "Title coupon", description: "Description coupon", discount: "20%", code: "AHYS", company_id: 1)
-Company.create(name: "Net Shoes")

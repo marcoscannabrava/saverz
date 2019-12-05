@@ -1,0 +1,9 @@
+<% @companies.each do |company| %>
+  <div class="each-company-card" >
+    <div class="each-card-content">
+    <%= link_to company_path(company.id), class: "company-image" do %>
+      <img id="company-main-logo" src="<%= company.logo %>">
+    <% end %>
+    </div>
+  </div>
+<% end %>

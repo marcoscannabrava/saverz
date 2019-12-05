@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   resources :companies, only: :show do
     # GET companies/:company_id/coupons
-    resources :coupons, only: [ :index ]
+    #resources :coupons, only: [ :index ]
   end
 
   resources :used_coupons, only: [ :index ]

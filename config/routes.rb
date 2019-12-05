@@ -7,17 +7,17 @@ Rails.application.routes.draw do
     end
   end
   root to: 'pages#home'
-  get '/test', to: 'coupons#index'
 
   get 'dashboard', to: "user/dashboards#show"
+
+  get '/test', to: 'coupons#index'
 
   # Abstract controller
   resources :field_choices, only: [ :new, :create ]
 
-  resources :companies, only: :show do
-    # GET companies/:company_id/coupons
-    #resources :coupons, only: [ :index ]
-  end
+  # Show coupons from a company
+  resources :companies, only: :show
 
+  # PENDING
   resources :used_coupons, only: [ :index ]
 end

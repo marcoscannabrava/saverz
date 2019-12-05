@@ -4,7 +4,7 @@ class UpdateCouponsJob < ApplicationJob
   def perform
     # URL below gets all coupons from company ID
     api_key = ENV['ZANOX_API_KEY']
-    coupons_api = "https://api.zanox.com/json/2011-03-01/incentives?connectid=E77A8A44C2CBD0BA5A28&incentiveType=coupons&region=BR"
+    coupons_api = "https://api.zanox.com/json/2011-03-01/incentives?connectid=#{api_key}&incentiveType=coupons&region=BR"
 
     Coupon.destroy_all
 

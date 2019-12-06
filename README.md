@@ -1,7 +1,7 @@
 # $averZ
 > **First Codebase**
 
-![$averZ Logo](/app/assets/images/logo.png)
+![$averZ Logo](/app/assets/images/saverz-v2.png)
 
 ### Setup
 - Run the following commands

@@ -2,7 +2,7 @@
 <div class="container bootstrap-field-container">
   <div class="field-container">
       <div class="field-image mr-3">
-        <img src="<%= @field.photo %>" class="card-img img-thumbnail" alt="...">
+        <%= cl_image_tag @field.photo, class: "card-img img-thumbnail", alt: @field.photo %>
         <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
       </div>
       <div class="field-description">

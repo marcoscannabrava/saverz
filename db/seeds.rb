@@ -1,8 +1,6 @@
 Coupon.destroy_all
 Company.destroy_all
 Field.destroy_all
-Company.destroy_all
-Coupon.destroy_all
 
 un_goals = [ 
   ["No Poverty", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg"],

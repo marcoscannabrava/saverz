@@ -7,9 +7,11 @@
 </div>
 <div class="row grid p-5">
   <% @fields.each do |field| %>
-    <%= link_to "#{field_choices_path}?field_id=#{field.id}", method: :post do %>
-      <%= render "shared/card", field: field %>
-    <% end %>
+
+    <%#= link_to "#{field_choices_path}?field_id=#{field.id}", method: :post, 'data-confirm': "Do you?" do %>
+      <%#= render "shared/card", field: field %>
+    <%# end %>
+    <%= render "shared/popup_fields", field: field %>
   <% end %>
 </div>
 

@@ -1,16 +1,18 @@
 <!-- Supported Cause  -->
 <div class="container bootstrap-field-container">
   <div class="field-container">
-    <div class="field-image mr-3">
-      <img src="<%= @field.photo %>" class="card-img img-thumbnail" alt="...">
-      <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
-    </div>
-    <div class="field-description">
-      <div class="card-body">
-        <h3 class="card-title">Research Field Supported:
-          <br>
-          <%= @field.name %></h2>
-        <p class="card-text"><%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!".truncate(100) %></p>
+
+      <div class="field-image mr-3">
+        <%= cl_image_tag @field.photo, class: "card-img img-thumbnail", alt: @field.photo %>
+        <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
+      </div>
+      <div class="field-description">
+        <div class="card-body">
+          <h3 class="card-title">Research Field Supported:
+            <br>
+            <%= @field.name %></h2>
+          <p class="card-text">This field support studies on <%= @field.descritption.truncate(100) %></p>
+        </div>
       </div>
     </div>
   </div>

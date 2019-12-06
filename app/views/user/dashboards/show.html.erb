@@ -1,35 +1,47 @@
 <!-- Supported Cause  -->
 <div class="container bootstrap-field-container">
-  <div class="field-container">
+  <div class="field-container d-flex">
       <div class="field-image mr-3">
-        <img src="<%= @field.photo %>" class="card-img img-thumbnail" alt="...">
+        <%= cl_image_tag @field.photo, class: "card-img img-thumbnail", alt: @field.photo %>
         <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
       </div>
-      <div class="field-description">
+      <div class="field-description flex-grow">
         <div class="card-body">
           <h3 class="card-title">Research Field Supported:
             <br>
             <%= @field.name %></h2>
-          <p class="card-text"><%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!".truncate(100) %></p>
+          <p class="card-text" style="font-family: 'Open Sans';">This field support studies on <%= @field.descritption.truncate(100) %></p>
         </div>
       </div>
+    </div>
   </div>
 </div>
 
 <!-- Companies here  -->
 
+<br>
 <div class="text-center">
-  <h1 class="text-muted pt-5 pb-3">MY COMPANIES</h1>
+  <h1 class="header1">Stores</h1>
 </div>
+<br>
+<br>
 
 <div class="company-list">
-  <%= render 'companies/companies_cards' %>
+  <%= render 'shared/companies_cards' %>
 </div>
+<br>
+<br>
+<br>
+<br>
 
 <style>
-    .company-list {
+  .company-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
+  }
+
+  .header1 {
+    color: #292B3B;
   }
 </style>

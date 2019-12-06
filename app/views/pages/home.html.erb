@@ -34,7 +34,7 @@
   </div>
 </div>
 
-<a class="arrow-link" href="http://localhost:3000/#target">
+<a class="arrow-link" href="#target">
   <div class="arrow-down fas fa-4x fa-angle-double-down d-flex justify-content-center"></div>
 </a>
 <a id="target"><br></a>
@@ -55,9 +55,11 @@
 </div>
 <div class="row grid p-5">
   <% @fields.each do |field| %>
-    <%= link_to "#{field_choices_path}?field_id=#{field.id}", method: :post do %>
-      <%= render "shared/card", field: field %>
-    <% end %>
+
+    <%#= link_to "#{field_choices_path}?field_id=#{field.id}", method: :post, 'data-confirm': "Do you?" do %>
+      <%#= render "shared/card", field: field %>
+    <%# end %>
+    <%= render "shared/popup_fields", field: field %>
   <% end %>
 </div>
 
@@ -80,6 +82,7 @@
   text-align: center;
 }
 .how-all p {
+  font-family: 'Open Sans';
   font-size: 14px;
   text-align: center;
 }

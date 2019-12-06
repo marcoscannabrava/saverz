@@ -1,0 +1,27 @@
+<button type="button" class="btn" data-toggle="modal" data-target="#modal-<%= field.id %>">
+  <%= cl_image_tag field.photo, class: "un-img-card" %>
+</button>
+
+<div class="modal fade" id="modal-<%= field.id  %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="d-flex">
+          <div class="icon text-danger d-flex">
+            <%= cl_image_tag field.photo, class: "card-img img-thumbnail", alt: field.photo %>
+          </div>
+          <div class="notice d-flex flex-column">
+            <h4>Support <%= field.name %>?</h4>
+            <p style="font-family: 'Open Sans';">This field support studies on <%= field.descritption %></p>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <%= button_to "#{field_choices_path}?field_id=#{field.id}", method: :post, class:"btn btn-danger" do %>
+              Support
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

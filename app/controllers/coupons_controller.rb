@@ -1,5 +1,6 @@
 class CouponsController < ApplicationController
   def index
-    # @coupons = Coupon.where(company_id: ?????).all
+    UpdateCouponsJob.perform_now
+    @coupons = Coupon.all
   end
 end

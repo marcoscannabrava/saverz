@@ -1,9 +1,57 @@
 <%= render 'shared/banner' %>
 
-<div class="text-center mt-4">
-  <h2> Don't Know What Field Support ? </h2>
+<div class="how-title">
+  <h1 class="text-center">How does it work?</h1>
+</div>
+<div class="how-all d-flex justify-content-center">
+  <div class="how-to">
+    <h2>1.</h2>
+    <span class="fa fa-3x fa-search d-flex justify-content-center"></span>
+    <br>
+    <h4 class="card-title text-center">Choose a Research</h4>
+    <p class="card-text"><%= "Choose a researcher or a field to support everytime you purchase.".truncate(100)%></p>
+  </div>
+  <div class="how-to">
+    <h2>2.</h2>
+    <span class="fa fa-3x fa-store d-flex justify-content-center"></span>
+    <br>
+    <h4 class="card-title text-center">Select a Store</h4>
+    <p class="card-text"><%= "Select the store you like and check all of their coupons.".truncate(100)%></p>
+  </div>
+  <div class="how-to">
+    <h2>3.</h2>
+    <span class="fa fa-3x fa-tags d-flex justify-content-center"></span>
+    <br>
+    <h4 class="card-title text-center">Save Money</h4>
+    <p class="card-text"><%= "Check all cupons avaiable that will help you and your researcher or field.".truncate(100)%></p>
+  </div>
+  <div class="how-to">
+    <h2>4.</h2>
+    <span class="fa fa-3x fa-donate d-flex justify-content-center"></span>
+    <br>
+    <h4 class="card-title text-center">Researcher Gains</h4>
+    <p class="card-text"><%= "A percentage of your purchase goes to the researcher or field.".truncate(100) %></p>
+  </div>
+</div>
+
+<a class="arrow-link" href="http://localhost:3000/#target">
+  <div class="arrow-down fas fa-4x fa-angle-double-down d-flex justify-content-center"></div>
+</a>
+<a id="target"><br></a>
+
+<div class="text-center mt-5">
+  <h2>Search Your Researcher Name ...</h2>
   <br>
-  <h4> See Most Supported Programs </h4>
+</div>
+
+<div class="search-banner">
+  <div id="search-banner">
+    <%= render 'shared/search' %>
+  </div>
+</div>
+
+<div class="text-center mt-5">
+  <h2>... Or Choose a UN Goal and Fund Research in That Area</h2>
 </div>
 <div class="row grid p-5">
   <% @fields.each do |field| %>
@@ -13,3 +61,54 @@
   <% end %>
 </div>
 
+
+
+
+
+
+
+<style>
+.search-banner {
+  background-color: #E7E6E4;
+  padding: 2rem;
+}
+.how-all h2 {
+  font-size: 20px;
+}
+.how-all h4 {
+  font-size: 24px;
+  text-align: center;
+}
+.how-all p {
+  font-size: 14px;
+  text-align: center;
+}
+.how-to {
+  width: 16rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  border: 1px #D7D6D2 solid;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.how-title {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.arrow-down {
+  color: #8A8881;
+}
+.arrow-down p:hover {
+  color: #8A8881;
+}
+.arrow-down p:before {
+  color: #8A8881;
+}
+.arrow-down p:hover {
+  text-decoration: none;
+}
+.arrow-link:hover {
+  color: gray;
+}
+</style>

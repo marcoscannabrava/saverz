@@ -1,20 +1,20 @@
 .banner {
-  // background-size: cover;
-  // background-position: bottom;
-  padding: 130px 0 70px;
-  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image-url('pencils.jpg');
+  background-size: cover;
+  background-position: top;
+  padding: 6rem;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image-url('people-diversity.jpg');
+  opacity: 0.8;
   h1 {
     margin: 0;
-    color: #292B3B;
+    color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 32px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 5px;
   }
-  p {
-    font-size: 20px;
-    color: #292B3B;
-    opacity: .7;
+  h2 {
+    font-size: 30px;
+    color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
     #search-banner {
@@ -24,17 +24,25 @@
   }
 }
 
-body {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(249,223,138,0.1), rgba(236,220,168,0.5)),
-    url('people.jpg');
-    background-size: cover;
-    overflow-x: hidden;
-  // background: image-url('people.jpg') no-repeat center center fixed;
-/*     -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-overflow-x: hidden; */
-    //background: rgb(255,255,255);
-}
+ .nav_icon_page {
+    height: 70px;
+  }
+  .banner h2 {
+    margin-top: 14px;
+  }
+
+
+// body {
+//     // background-image:
+//     // linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(249,223,138,0.1), rgba(236,220,168,0.5)),
+//     // url('people.jpg');
+//     // background-size: cover;
+//     // overflow-x: hidden;
+//   // background: image-url('people.jpg') no-repeat center center fixed;
+// /*     -webkit-background-size: cover;
+// -moz-background-size: cover;
+// -o-background-size: cover;
+// background-size: cover;
+// overflow-x: hidden; */
+//     //background: rgb(255,255,255);
+// }

@@ -1,17 +1,16 @@
 <!-- Supported Cause  -->
 <div class="container bootstrap-field-container">
-  <div class="field-container">
-
+  <div class="field-container d-flex">
       <div class="field-image mr-3">
         <%= cl_image_tag @field.photo, class: "card-img img-thumbnail", alt: @field.photo %>
         <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
       </div>
-      <div class="field-description">
+      <div class="field-description flex-grow">
         <div class="card-body">
           <h3 class="card-title">Research Field Supported:
             <br>
             <%= @field.name %></h2>
-          <p class="card-text">This field support studies on <%= @field.descritption.truncate(100) %></p>
+          <p class="card-text" style="font-family: 'Open Sans';">This field support studies on <%= @field.descritption.truncate(100) %></p>
         </div>
       </div>
     </div>
@@ -21,15 +20,9 @@
 <!-- Companies here  -->
 
 <br>
-<br>
-<br>
-<br>
 <div class="text-center">
-  <h1 class="header1">MY COMPANIES</h1>
+  <h1 class="header1">Stores</h1>
 </div>
-<br>
-<br>
-<br>
 <br>
 <br>
 

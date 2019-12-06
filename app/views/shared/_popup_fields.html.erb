@@ -7,13 +7,13 @@
     <div class="modal-content">
       <div class="modal-body text-center">
         <div class="d-flex">
-        <div class="icon text-danger d-flex">
-          <%= cl_image_tag field.photo, class: "card-img img-thumbnail", alt: field.photo %>
-        </div>
-        <div class="notice d-flex flex-column">
-          <h4>You Chose to support <%= field.name %> </h4>
-          <p>This field support studies on <%= field.descritption %></p>
-        </div>
+          <div class="icon text-danger d-flex">
+            <%= cl_image_tag field.photo, class: "card-img img-thumbnail", alt: field.photo %>
+          </div>
+          <div class="notice d-flex flex-column">
+            <h4>Support <%= field.name %>?</h4>
+            <p style="font-family: 'Open Sans';">This field support studies on <%= field.descritption %></p>
+          </div>
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

@@ -1,14 +1,15 @@
 .footer {
   background: rgba(255,255,255,0.4);
   display: flex;
-  align-items: center;
+  align-content: left;
   height: 7em;
   color: rgba(0,0,0,0.3);
   margin-top: 1em;
 }
 .footer-links {
+  padding-left: 2em;
   display: flex;
-  align-items: left;
+  margin: auto 0 auto;
 }
 .footer-links a {
   color: #e85900;
@@ -19,9 +20,8 @@
 .footer-links a:hover {
   opacity: 0.8;
 }
-.footer-copyright p {
-  margin:0.5em 0.5em;
-  justify-content: center;
+.footer p {
   color: #e85900;
+  margin: auto 0 auto;
 }
 

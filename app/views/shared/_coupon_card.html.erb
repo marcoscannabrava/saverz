@@ -9,7 +9,9 @@
   </div>
   <div class="card-product-button">
     <%= cl_image_tag company.logo %>
-    <button class="btn btn-secondary">Go To Store</button>
+    <%= link_to  coupon.tracking_url, class:"btn btn-secondary" do %>
+      Go To Store
+    <% end %>
   </div>
 </div>
 

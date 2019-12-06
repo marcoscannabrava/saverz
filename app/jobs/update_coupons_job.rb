@@ -4,7 +4,9 @@ class UpdateCouponsJob < ApplicationJob
   def perform
     # URL below gets all coupons from company ID
     api_key = ENV['ZANOX_API_KEY']
-    coupons_api = "https://api.zanox.com/json/2011-03-01/incentives?connectid=#{api_key}&incentiveType=coupons&region=BR"
+    coupons_api = "https://api.zanox.com/json/2011-03-01/incentives?connectid=#{api_key}&region=BR&adspace=2152244"
+    
+    # USING SAVEWHEY ADSPACE & API KEY !!!
 
     Coupon.destroy_all
 
@@ -18,7 +20,8 @@ class UpdateCouponsJob < ApplicationJob
         Coupon.create!(
           title: coupon["name"], 
           code: coupon["couponCode"],
-          company_id: Company.where(zanox_id: coupon["program"]["@id"]).ids[0],
+          tracking_url: coupon["admedia"]["admediumItem"]["trackingLinks"]["trackingLink"][0]["ppc"], 
+          company_id: Company.where(zanox_id: coupon["program"]["@id"]).ids[0]
         )
       end
     end

@@ -6,12 +6,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body text-center">
-        <div class="icon text-danger">
+        <div class="d-flex">
+        <div class="icon text-danger d-flex">
           <%= cl_image_tag field.photo, class: "card-img img-thumbnail", alt: field.photo %>
         </div>
-        <div class="notice">
+        <div class="notice d-flex flex-column">
           <h4>You Chose to support <%= field.name %> </h4>
-          <p>For the next 24 hours you can get any product at half-price.</p>
+          <p>This field support studies on <%= field.descritption %></p>
+        </div>
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

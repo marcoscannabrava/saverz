@@ -16,7 +16,12 @@ class UpdateCompaniesJob < ApplicationJob
     var = companies_info["programItems"]["programItem"]
     
     var.each do |company| 
-      Company.create!(name: company["name"], remote_logo_url: company["image"], zanox_id: company["@id"])
+      Company.create!(
+        name: company["name"], 
+        remote_logo_url: company["image"], 
+        zanox_id: company["@id"],
+        url: company["url"]
+      )
     end
   end
 end

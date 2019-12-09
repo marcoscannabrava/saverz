@@ -20,4 +20,11 @@ Rails.application.routes.draw do
 
   # PENDING
   resources :used_coupons, only: [ :index ]
+
+  namespace :api, defaults: { format: :json } do
+  namespace :v1 do
+    resources :coupons, only: [ :index ]
+  end
+end
+
 end

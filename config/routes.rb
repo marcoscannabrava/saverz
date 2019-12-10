@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'researchers/show'
   devise_for :users
 
   devise_scope :user do
@@ -20,6 +21,8 @@ Rails.application.routes.draw do
 
   # PENDING
   resources :used_coupons, only: [ :index ]
+
+  resources :researchers, only: [ :show ]
 
   namespace :api, defaults: { format: :json } do
   namespace :v1 do

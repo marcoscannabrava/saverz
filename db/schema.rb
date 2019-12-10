@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 2019_12_10_132650) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "zanox_id"
-    t.string "tracking_url"
     t.string "url"
   end
 

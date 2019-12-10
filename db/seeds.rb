@@ -30,20 +30,23 @@ end
 
 
 researchers = [
-  ["Adriana Honor", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg"],
-  ["Hugo Hunter", "UERJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg"],
+  ["Adriana Honor", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg", "Adriana Honor is 28 years-old and is graduated in Bussiness School. She worked in many companies and started to realize that people don't really pay attention to the world. That was the breakpoint for her, where she decided to quit her job and start a new life looking at others."],
+  ["Hugo Hunter", "UERJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg", "Bio about you here"],
 ]
 
 researchers.each do |researcher|
-  Researcher.create!(full_name: researcher[0], university: researcher[1], lattes_link: researcher[2], photo: researcher[3])
+  Researcher.create!(full_name: researcher[0], university: researcher[1], lattes_link: researcher[2], photo: researcher[3], bio: researcher[4])
 end
 
 first_researcher = Researcher.first
 
 articles = [
-  ["Project One", "Project one description", Field.find_by_slug('no-poverty'), first_researcher],
-  ["Project Two", "Project two description", Field.find_by_slug('no-poverty'), first_researcher],
-  ["Project Three", "Project three description", Field.find_by_slug('no-poverty'), first_researcher],
+  ["Learning in Science. The Implications of Children's Science.",
+    "Designed primarily for practicing teachers and for use in pre- and in-service courses in science education, this book focuses on how 10- to 15-year-old children learn science. Findings are analyzed and suggestions are offered for improving the teaching/learning process. Issues are discussed and organized into five major sections.",
+    Field.find_by_slug('quality-education'),
+    first_researcher],
+  ["Families, Policies, And Gender Equality", "Family shifts: families, policies, and gender equality - HathiTrust. 15 May 2017. Women are increasingly the breadwinners of their families, a shift in Depending on who you talk to, the decline of the traditional family in Only doing this will allow policies seeking to empower women and girls really work.", Field.find_by_slug('gender-equality'), first_researcher],
+  ["Gender Equality And Intrastate Armed Conflict", "In this article, I examine to what extent gender equality is associated with lower levels of intrastate armed conflict. I use three measures of gender equality: (1) a dichotomous indicator of whether the highest leader of a state is a woman; (2) the percentage of women in parliament; and (3) the female-to-male higher education attainment ratio.", Field.find_by_slug('gender-equality'), first_researcher],
 ]
 
 articles.each do |article|

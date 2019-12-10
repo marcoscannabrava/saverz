@@ -3,22 +3,59 @@
   margin: 2rem 5rem;
 }
 
-.title-button {
+.main-profile {
   .btn {
     border: none;
     font-family: "Montserrat";
     font-weight: 300;
-    background-color: #F78668;
+    background-color: #FF6100;
+    margin-left: -1rem;
+    width: 24rem;
   }
 }
 
-.researcher-photo  {
-  background-color: white;
-  border-radius: 0.3rem;
-  margin-top: 1.4rem;
-  padding: 1rem;
+.title-button {
+  padding-bottom: 2rem;
+  border-bottom: 1px gray solid;
+  h1 {
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
 }
 
+.main-profile img {
+  border-radius: 0.2rem;
+  padding: 0;
+  width: 24rem;
+  // margin-top: 1.5rem;
+}
+
+#researcher-bio {
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  width: 24rem;
+  text-align: justify;
+  font-family: "Montserrat";
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.researcher-university {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.researcher-lattes a:hover {
+  font-weight:400;
+}
+
+.researcher-lattes a:hover {
+  color: #FF6100;
+}
+
+.researcher-lattes a:visited {
+  color: black;
+}
 
 .article-card {
   .card {
@@ -36,4 +73,17 @@
       margin-right: 0.5rem;
     }
   }
+}
+
+.card-body {
+    h5 {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+}
+
+.card-body p {
+  font-family: "Montserrat";
+  font-size: 0.7rem;
 }

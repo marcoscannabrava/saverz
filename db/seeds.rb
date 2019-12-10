@@ -50,5 +50,5 @@ articles.each do |article|
   Article.create!(title: article[0], description: article[1], field: article[2], researcher: article[3])
 end
 
-# UpdateCompaniesJob.perform_now
-# UpdateCouponsJob.perform_now
+UpdateCompaniesJob.perform_now
+UpdateCouponsJob.perform_now

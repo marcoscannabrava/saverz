@@ -1,6 +1,8 @@
 Coupon.destroy_all
 Company.destroy_all
 Field.destroy_all
+Article.destroy_all
+Researcher.destroy_all
 
 un_goals = [
   ["No Poverty", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg", "Economic growth must be inclusive to provide sustainable jobs and promote equality." ],
@@ -26,5 +28,27 @@ un_goals.each do |goal|
   Field.create!(name: goal[0], remote_photo_url: goal[1], descritption: goal[2])
 end
 
-UpdateCompaniesJob.perform_now
-UpdateCouponsJob.perform_now
+
+researchers = [
+  ["Adriana Honor", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg"],
+  ["Hugo Hunter", "UERJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg"],
+]
+
+researchers.each do |researcher|
+  Researcher.create!(full_name: researcher[0], university: researcher[1], lattes_link: researcher[2], photo: researcher[3])
+end
+
+first_researcher = Researcher.first
+
+articles = [
+  ["Project One", "Project one description", Field.find_by_slug('no-poverty'), first_researcher],
+  ["Project Two", "Project two description", Field.find_by_slug('no-poverty'), first_researcher],
+  ["Project Three", "Project three description", Field.find_by_slug('no-poverty'), first_researcher],
+]
+
+articles.each do |article|
+  Article.create!(title: article[0], description: article[1], field: article[2], researcher: article[3])
+end
+
+# UpdateCompaniesJob.perform_now
+# UpdateCouponsJob.perform_now

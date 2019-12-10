@@ -1,0 +1,47 @@
+<div class="researcher-container">
+  <div class="title-button row m-5">
+    <div class="col col-lg-10">
+      <h1><%= @researcher.full_name %></h1>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-secondary btn-lg">SUPPORT</button>
+    </div>
+  </div>
+
+  <div class="profile-info row m-5">
+    <div class="main-profile col">
+      <div class="researcher-photo">
+        <%= image_tag "student-photo.jpg", style:"width: 28rem;" %>
+      </div>
+      <div class="resercher-university">
+        <%= @researcher.university %>
+      </div>
+      <div class="researcher-lattes">
+        <%= @researcher.lattes_link %>
+      </div>
+    </div>
+
+    <div class="articles col">
+      ARTICLES
+      <div class="article-card">
+        <% @articles.each do |article| %>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><%= article.title %></h5>
+                  <p class="card-text"><%= article.description %></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="article-field">
+                    <%= cl_image_tag article.field.photo, class: "card-img", alt: article.field.photo %>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,8 @@
   <div class="field-container d-flex">
       <div class="field-image mr-3">
         <%= cl_image_tag @field.photo, class: "card-img img-thumbnail", alt: @field.photo %>
-        <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
+        <a class="mt-2 btn btn-change-field" href="/">Change Field</a>
+        <img src="myicon.svg" class="hvr-icon" />
       </div>
       <div class="field-description flex-grow">
         <div class="card-body">
@@ -44,4 +45,15 @@
   .header1 {
     color: #292B3B;
   }
+
+  .btn-change-field {
+    color: white;
+    background-color: #FF6100;
+    border-color: #FF6100;
+  }
+  .btn-change-field:hover {
+    color: #ffffff !important;
+    background: #F98B4F;
+    border-color: #F98B4F !important;
+    transition: all 0.4s ease 0s;
 </style>

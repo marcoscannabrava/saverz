@@ -1,7 +1,7 @@
-<div class="container">
+<div class="researcher-container">
   <div class="title-button row m-5">
     <div class="col col-lg-10">
-      <h1><%= @researcher.full_name %> Profile</h1>
+      <h1><%= @researcher.full_name %></h1>
     </div>
     <div class="col">
       <button type="button" class="btn btn-secondary btn-lg">SUPPORT</button>
@@ -35,7 +35,7 @@
               </div>
               <div class="col-md-4">
                 <div class="article-field">
-                    <%= cl_image_tag article.field.photo, class: "card-img img-thumbnail", alt: article.field.photo %>
+                    <%= cl_image_tag article.field.photo, class: "card-img", alt: article.field.photo %>
                 </div>
               </div>
             </div>

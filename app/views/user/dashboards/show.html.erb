@@ -2,15 +2,19 @@
 <div class="container bootstrap-field-container">
   <div class="field-container d-flex">
       <div class="field-image mr-3">
-        <%= cl_image_tag @field.photo, class: "card-img img-thumbnail", alt: @field.photo %>
-        <a class="mt-2 btn btn-primary btn-sm" href="/">Change Field</a>
+        <%= cl_image_tag @field.photo, class: "card-img img-thumbnail card-design", alt: @field.photo %>
+        <br>
+        <br>
+        <a class="mt-2 btn btn-change-field btn-block" href="/"><i class="fa fa-chevron-circle-left hvr-icon hover-bump-left"></i> &nbsp; Change Field
+
+        </a>
       </div>
       <div class="field-description flex-grow">
         <div class="card-body">
           <h3 class="card-title">Research Field Supported:
             <br>
             <%= @field.name %></h2>
-          <p class="card-text" style="font-family: 'Open Sans';">This field support studies on <%= @field.descritption.truncate(100) %></p>
+          <p class="card-text" style="font-family: 'Open Sans';">This field support studies on <%= @field.descritption.truncate(150) %></p>
         </div>
       </div>
     </div>
@@ -43,5 +47,43 @@
 
   .header1 {
     color: #292B3B;
+  }
+
+  .btn-change-field {
+    color: white;
+    background-color: #FF6100;
+    border-color: #FF6100;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    border-radius: 3px;
+  }
+  .btn-change-field:hover {
+    color: #ffffff !important;
+    background: #F98B4F;
+    border-color: #F98B4F !important;
+    transition: all 0.4s ease 0s;
+  }
+
+  .hover-bump-left {
+    transition: transform 0.25s;
+  }
+
+  .btn:hover .hover-bump-left {
+    transform: translateX(-8px);
+  }
+  .card-design {
+  width: 14em;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
+  opacity: 0.7;
+  }
+  .card-title {
+    color: #292B3B;
+    text-justify: left;
+
+  }
+  .card-text {
+    color: #292B3B;
+    text-align: justify;
+    text-justify: left;
   }
 </style>

@@ -1,0 +1,47 @@
+<button type="button" class="btn" data-target="#modal" data-toggle="modal" %>">
+  dghgffgjf
+</button>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="d-flex">
+          <div class="notice d-flex flex-column container" style="font-family: 'Open Sans'; color: #292B3B">
+            <br>
+            <h3>Support the Researcher</h3>
+            <br>
+            <p>Download Chrome Extension to support your researcher and get coupons</p>
+          </div>
+        </div>
+        <hr class="line">
+        <%= link_to "http://google.com", class:"btn btn-chrome", target: :blank do %>
+          <i class="fab fa-chrome"></i> &nbsp; Download Chrome Extension
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    width: 350px;
+    text-align: justify-content-center;
+  }
+  .btn-chrome {
+    color: white;
+    background-color: #FF6100;
+    border-color: #FF6100;
+  }
+
+  .line {
+    border-color: #FF6100;
+    border-width: 2px;
+  }
+  .modal-body {
+    background-color: #EBEBED;
+    border: none;
+    border-radius: 0.25rem;
+  }
+</style>
+

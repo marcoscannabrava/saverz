@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_10_211942) do
+ActiveRecord::Schema.define(version: 2019_12_11_135105) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_211942) do
     t.string "photo"
     t.string "descritption"
     t.string "slug"
+    t.integer "index"
     t.index ["slug"], name: "index_fields_on_slug"
   end
 
@@ -78,11 +79,14 @@ ActiveRecord::Schema.define(version: 2019_12_10_211942) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "field_id"
+    t.bigint "researcher_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["field_id"], name: "index_users_on_field_id"
+    t.index ["researcher_id"], name: "index_users_on_researcher_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "coupons", "companies"
   add_foreign_key "users", "fields"
+  add_foreign_key "users", "researchers"
 end

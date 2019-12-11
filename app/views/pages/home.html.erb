@@ -57,15 +57,11 @@
   </div>
 <%# ------------------- SEARCH RESEARCHER (END) ------------------- %>
 
-<%# ------------------- SEARCH UN GOAL ------------------- %>
-  <div class="text-center mt-5">
-    <h2>Or Choose a UN Goal and Fund Research in That Area</h2>
-  </div>
-  <div class="row grid p-5">
-    <% @fields.each do |field| %>
-      <%= render "shared/popup_fields", field: field %>
-    <% end %>
-  </div>
-<%# ------------------- SEARCH UN GOAL (END) ------------------- %>
-
+<div class="text-center mt-5">
+  <h2>... Or Choose a UN Goal and Fund Research in That Area</h2>
+</div>
+<div class="row grid p-5">
+  <% @fields.each do |field| %>
+    <%= render "shared/popup_fields", field: field %>
+  <% end %>
 </div>

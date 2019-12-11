@@ -17,7 +17,7 @@
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <%= button_to "#{field_choices_path}?field_id=#{field.id}", method: :post, class:"btn btn-danger" do %>
+            <%= button_to "#{supported_choices_path}?field_id=#{field.id}", method: :post, class:"btn btn-danger" do %>
               Support
             <% end %>
         </div>

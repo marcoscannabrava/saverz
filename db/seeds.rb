@@ -38,20 +38,20 @@ researchers.each do |researcher|
   Researcher.create!(full_name: researcher[0], university: researcher[1], lattes_link: researcher[2], photo: researcher[3], bio: researcher[4])
 end
 
-first_researcher = Researcher.first
+# first_researcher = Researcher.first
 
-articles = [
-  ["Learning in Science. The Implications of Children's Science.",
-    "Designed primarily for practicing teachers and for use in pre- and in-service courses in science education, this book focuses on how 10- to 15-year-old children learn science. Findings are analyzed and suggestions are offered for improving the teaching/learning process. Issues are discussed and organized into five major sections.",
-    Field.find_by_slug('quality-education'),
-    first_researcher],
-  ["Families, Policies, And Gender Equality", "Family shifts: families, policies, and gender equality - HathiTrust. 15 May 2017. Women are increasingly the breadwinners of their families, a shift in Depending on who you talk to, the decline of the traditional family in Only doing this will allow policies seeking to empower women and girls really work.", Field.find_by_slug('gender-equality'), first_researcher],
-  ["Gender Equality And Intrastate Armed Conflict", "In this article, I examine to what extent gender equality is associated with lower levels of intrastate armed conflict. I use three measures of gender equality: (1) a dichotomous indicator of whether the highest leader of a state is a woman; (2) the percentage of women in parliament; and (3) the female-to-male higher education attainment ratio.", Field.find_by_slug('gender-equality'), first_researcher],
-]
+# articles = [
+#   ["Learning in Science. The Implications of Children's Science.",
+#     "Designed primarily for practicing teachers and for use in pre- and in-service courses in science education, this book focuses on how 10- to 15-year-old children learn science. Findings are analyzed and suggestions are offered for improving the teaching/learning process. Issues are discussed and organized into five major sections.",
+#     Field.find_by_slug('quality-education'),
+#     first_researcher],
+#   ["Families, Policies, And Gender Equality", "Family shifts: families, policies, and gender equality - HathiTrust. 15 May 2017. Women are increasingly the breadwinners of their families, a shift in Depending on who you talk to, the decline of the traditional family in Only doing this will allow policies seeking to empower women and girls really work.", Field.find_by_slug('gender-equality'), first_researcher],
+#   ["Gender Equality And Intrastate Armed Conflict", "In this article, I examine to what extent gender equality is associated with lower levels of intrastate armed conflict. I use three measures of gender equality: (1) a dichotomous indicator of whether the highest leader of a state is a woman; (2) the percentage of women in parliament; and (3) the female-to-male higher education attainment ratio.", Field.find_by_slug('gender-equality'), first_researcher],
+# ]
 
-articles.each do |article|
-  Article.create!(title: article[0], description: article[1], field: article[2], researcher: article[3])
-end
+# articles.each do |article|
+#   Article.create!(title: article[0], description: article[1], field: article[2], researcher: article[3])
+# end
 
-UpdateCompaniesJob.perform_now
-UpdateCouponsJob.perform_now
+# UpdateCompaniesJob.perform_now
+# UpdateCouponsJob.perform_now

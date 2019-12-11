@@ -1,10 +1,10 @@
-  <%= render 'shared/banner' %>
-<div class="container-home">
+<%= render 'shared/banner' %>
 
-  <!-- popup_researcher -->
+<div class="container-home">
 
   <%= render 'shared/popup_researcher' %>
 
+<%# ------------------- HOW TO SECTION ------------------- %>
   <div class="how-title">
     <h1 class="text-center">How does it work?</h1>
   </div>
@@ -38,12 +38,14 @@
       <p class="card-text"><%= "A percentage of your purchase goes to the researcher or field.".truncate(100) %></p>
     </div>
   </div>
+<%# ------------------- HOW TO SECTION (END) ------------------- %>
 
   <a class="arrow-link" href="#target">
     <div class="arrow-down fas fa-4x fa-angle-double-down d-flex justify-content-center"></div>
   </a>
   <a id="target"><br></a>
 
+<%# ------------------- SEARCH RESEARCHER ------------------- %>
   <div class="text-center mt-5 mb-3 ">
     <h2>Search Your Researcher Name</h2>
   </div>
@@ -53,68 +55,17 @@
       <%= render 'shared/search' %>
     </div>
   </div>
+<%# ------------------- SEARCH RESEARCHER (END) ------------------- %>
 
+<%# ------------------- SEARCH UN GOAL ------------------- %>
   <div class="text-center mt-5">
     <h2>Or Choose a UN Goal and Fund Research in That Area</h2>
   </div>
   <div class="row grid p-5">
     <% @fields.each do |field| %>
-
-      <%#= link_to "#{field_choices_path}?field_id=#{field.id}", method: :post, 'data-confirm': "Do you?" do %>
-        <%#= render "shared/card", field: field %>
-      <%# end %>
       <%= render "shared/popup_fields", field: field %>
     <% end %>
   </div>
+<%# ------------------- SEARCH UN GOAL (END) ------------------- %>
+
 </div>
-
-
-
-
-
-
-<style>
-  html, body {
-    scroll-behavior: smooth;
-  }
-.how-all h2 {
-  font-size: 20px;
-}
-.how-all h4 {
-  font-size: 24px;
-  text-align: center;
-}
-.how-all p {
-  font-family: 'Open Sans';
-  font-size: 14px;
-  text-align: center;
-}
-.how-to {
-  width: 16rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-  border: 1px #D7D6D2 solid;
-  padding: 0.5rem 0.5rem;
-  border-radius: 0.2rem;
-}
-.how-title {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-}
-.arrow-down {
-  color: #8A8881;
-}
-.arrow-down p:hover {
-  color: #8A8881;
-}
-.arrow-down p:before {
-  color: #8A8881;
-}
-.arrow-down p:hover {
-  text-decoration: none;
-}
-.arrow-link:hover {
-  color: gray;
-}
-</style>

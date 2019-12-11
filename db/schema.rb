@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_10_211942) do
+ActiveRecord::Schema.define(version: 2019_12_11_135105) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_211942) do
     t.string "photo"
     t.string "descritption"
     t.string "slug"
+    t.integer "index"
     t.index ["slug"], name: "index_fields_on_slug"
   end
 

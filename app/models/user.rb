@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   belongs_to :field, optional: true
+  belongs_to :researcher, optional: true
 end

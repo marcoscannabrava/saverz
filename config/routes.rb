@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'supported_choices/new'
+  get 'supported_choices/create'
   get 'researchers/show'
   devise_for :users
 
@@ -14,7 +16,7 @@ Rails.application.routes.draw do
   get '/test', to: 'coupons#index'
 
   # Abstract controller
-  resources :field_choices, only: [ :new, :create ]
+  resources :supported_choices, only: [ :new, :create ]
 
   # Show coupons from a company
   resources :companies, only: :show

@@ -4,21 +4,18 @@
   font-weight: 700;
   font-size: 2.5rem;
   border-color: #FF6100;
-  border-bottom:
 }
 .btn-change-field {
-  color: white;
-  background-color: #FF6100;
+  color: #555;;
   font-family: "Montserrat";
-  font-weight: 700;
+  font-weight: 500;
   border-color: #FF6100;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   border-radius: 3px;
 }
 .btn-change-field:hover {
-  color: #ffffff !important;
-  background: #F98B4F;
-  border-color: #F98B4F !important;
+  color: #FF6100 !important;
+  border-color: #FF6100 !important;
   transition: all 0.4s ease 0s;
 }
 
@@ -29,11 +26,15 @@
 .btn:hover .hover-bump-left {
   transform: translateX(-8px);
 }
+.btn-block {
+  display: block;
+  width: 45%;
+}
 .card-design {
-width: 14em;
-border-radius: 1em;
-box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
-opacity: 0.7;
+  width: 14em;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
+  opacity: 0.7;
 }
 .body-text {
   color: #292B3B;
@@ -59,6 +60,7 @@ opacity: 0.7;
 .card-body p {
   font-family: "Montserrat";
   font-size: 1rem;
+  color: #292B3B;
 }
 .card-stores {
 -webkit-box-flex: 1;
@@ -216,4 +218,14 @@ border-color: #FF6100;
   position:relative;
   bottom:200px;
   right:-700px;
+}
+.circle-text {
+  font-size: 25px;
+  font-weight: 350;
+  font-family: "Montserrat";
+}
+.progress-value {
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Montserrat";
 }

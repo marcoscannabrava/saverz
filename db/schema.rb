@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2019_12_11_151014) do
     t.string "photo"
     t.string "descritption"
     t.string "slug"
+    t.integer "index"
     t.index ["slug"], name: "index_fields_on_slug"
   end
 

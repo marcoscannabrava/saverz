@@ -6,6 +6,8 @@ class Field < ApplicationRecord
 
   before_create :set_slug
 
+  scope :sorted_by_index, -> { order(index: :asc) }
+
   private
 
   def set_slug

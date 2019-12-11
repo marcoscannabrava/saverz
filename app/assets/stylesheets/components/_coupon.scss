@@ -1,54 +1,44 @@
-
-// Le Wagon Card Product Code
-
-.card-product {
+.coupon-card {
+  position: relative;
   max-width: 600px;
   overflow: hidden;
-  height: 120px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
   h2 {
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
-    margin: 0;
-  }
-  h3 {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    border: 2px dashed #8A8881;
+    border-radius: 0px 6px 0px 6px;
   }
   p {
     font-size: 12px;
-    line-height: 1.4;
-    opacity: .7;
-    margin-bottom: 0;
-    margin-top: 8px;
-  }
-  
-  .card-product-tag {
-    padding: 24px; 
-    height: 100%; 
-    width: 30%;
-    border-right: 1px dashed #292B3B;
-    display: flex;
-    flex-direction: column;
     text-align: center;
+    opacity: .7;
+    margin-bottom: 6px;
   }
-  // p-4 h-100 border-right d-flex flex-column
-
-  .card-product-infos {
-    padding: 24px;
-    // overflow-wrap: break-word;
+  i {
+    font-size: 20px;
+    opacity: .7;
+    position: absolute;
+    top: 12px;
+    transition: 0.3;
+    &:hover {
+      cursor: pointer;
+      color: rgb(50, 50, 50);
+    }
   }
-
-  .card-product-button {
-    height: 100%;
-    margin-left: auto;
-    margin-right: 8px;
-    // justify-content: flex-end;
-    display: flex;
-    flex-direction: column;
+  .copy-ico {
+    right: 3rem;
+  }
+  .link-ico {
+    color: #8A8881;
+    right: 0.5rem;
   }
 }

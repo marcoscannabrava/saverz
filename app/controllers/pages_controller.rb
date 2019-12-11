@@ -3,5 +3,6 @@ class PagesController < ApplicationController
 
   def home
     @fields = Field.all
+    @researchers = Researcher.pluck(:full_name)
   end
 end

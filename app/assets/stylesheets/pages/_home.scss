@@ -1,1 +1,33 @@
-// Specific CSS for your home-page
+// // Specific CSS for your home-page
+.card-how-works {
+  box-shadow: 0 0.125rem 0.25rem 0rem rgba(0,0,0,0.6);
+  margin-top: 3rem;
+  border-radius: 0.2rem;
+  // margin-top: 2rem;
+  h4 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  p {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .round-icon {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    margin: -3rem auto 0;
+    border: 0.25rem #FAFAFF solid;
+    box-shadow: 0 0 0.125rem 0rem rgba(0,0,0,0.6);
+  span {
+    padding-top: 0.8rem;
+  }
+}
+}
+
+.search-banner {
+  background-color: #E7E6E4;
+  padding: 2rem;
+}

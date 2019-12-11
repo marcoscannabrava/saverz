@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tutorials
   get 'supported_choices/new'
   get 'supported_choices/create'
   get 'researchers/show'

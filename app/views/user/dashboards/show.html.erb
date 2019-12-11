@@ -3,55 +3,52 @@
   <div class="field-container d-flex">
       <div class="field-image mr-3">
         <%= cl_image_tag @field.photo, class: "card-img img-thumbnail card-design", alt: @field.photo %>
-        <br>
-        <br>
-        <a class="mt-2 btn btn-change-field btn-block" href="/"><i class="fa fa-chevron-circle-left hvr-icon hover-bump-left"></i> &nbsp; Change Field
-
-        </a>
       </div>
       <div class="field-description flex-grow">
-        <div class="card-body">
-          <h3 class="card-title">Research Field Supported:
-            <br>
-            <%= @field.name %></h2>
-          <p class="card-text" style="font-family: 'Open Sans';">This field support studies on <%= @field.descritption.truncate(150) %></p>
+        <div class="card-body body-text">
+          <h3 class="card-title title-field">You support</h3>
+            <h3 class="title-name"><%= @field.name %></h3>
+            <a class="btn px-0 mb-2" href="/">
+              <i class="fa fa-chevron-circle-left hvr-icon hover-bump-left"></i> &nbsp; Change supported field
+            </a>
+            <p class="card-text">This field support studies on <%= @field.descritption.truncate(150) %></p>
         </div>
+
+
+
+
       </div>
     </div>
   </div>
 </div>
-
+<hr>
 <!-- Companies here  -->
+<div class="card-stores">
+    <div class="text-center">
+      <h1 class="header1">Stores</h1>
+    </div>
+  <br>
+  <br>
+  <br>
 
-<br>
-<div class="text-center">
-  <h1 class="header1">Stores</h1>
-</div>
-<br>
-<br>
-
-<div class="company-list">
   <%= render 'shared/companies_cards' %>
 </div>
-<br>
-<br>
-<br>
-<br>
 
 <style>
-  .company-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-  }
-
   .header1 {
     color: #292B3B;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-color: #FF6100;
+    border-bottom:
   }
 
   .btn-change-field {
     color: white;
     background-color: #FF6100;
+    font-family: "Montserrat";
+    font-weight: 700;
     border-color: #FF6100;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     border-radius: 3px;
@@ -76,14 +73,38 @@
   box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
   opacity: 0.7;
   }
-  .card-title {
+  .body-text {
     color: #292B3B;
     text-justify: left;
+    font-family: "Montserrat";
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0 1.25rem 1.25rem;
+  }
+  .title-field {
+    font-family: "Montserrat";
+    font-weight: 550;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .title-name {
+    font-family: "Montserrat";
+    font-weight: 350;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .card-body p {
+    font-family: "Montserrat";
+    font-size: 1rem;
+  }
+  .card-stores {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  border-color: #FF6100;
+  }
 
-  }
-  .card-text {
-    color: #292B3B;
-    text-align: justify;
-    text-justify: left;
-  }
 </style>

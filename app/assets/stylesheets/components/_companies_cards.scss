@@ -1,7 +1,12 @@
+.company-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
 .each-company-card {
   text-align: center;
   height: 7em;
-  border-color: #FF6100;
   border-radius: 10px;
   border-width: 10px;
 }
@@ -9,7 +14,6 @@
 .each-card-content {
   width: 50%;
   height: 5em;
-  border: 2px solid #FF6100;
   margin: 0 auto;
   border-radius: 10px;
   // border-width: 10px;

@@ -79,11 +79,14 @@ ActiveRecord::Schema.define(version: 2019_12_11_135105) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "field_id"
+    t.bigint "researcher_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["field_id"], name: "index_users_on_field_id"
+    t.index ["researcher_id"], name: "index_users_on_researcher_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "coupons", "companies"
   add_foreign_key "users", "fields"
+  add_foreign_key "users", "researchers"
 end

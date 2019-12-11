@@ -11,18 +11,23 @@
             <br>
             <h3>Support the Researcher</h3>
             <br>
+
             <p>Download Chrome Extension to support your researcher and get coupons</p>
           </div>
         </div>
-        <!-- <hr class="line"> -->
-        <%= link_to "http://google.com", class:"btn btn-chrome", target: :blank do %>
+
+        <%= button_to supported_choices_path(researcher_id: @researcher), method: :post, target: :blank, class:"btn btn-danger" do %>
           <i class="fab fa-chrome"></i> &nbsp; Download Chrome Extension
         <% end %>
+        <!-- <hr class="line"> -->
       </div>
       <br>
     </div>
   </div>
 </div>
+
+
+
 
 <style>
   .container {

@@ -1,51 +1,33 @@
-// Specific CSS for your home-page
-
-.container-home{
-  width: 90vw;
-  margin-right: 5vw;
-  margin-left: 5vw;
+// // Specific CSS for your home-page
+.card-how-works {
+  box-shadow: 0 0.125rem 0.25rem 0rem rgba(0,0,0,0.6);
+  margin-top: 3rem;
+  border-radius: 0.2rem;
+  // margin-top: 2rem;
+  h4 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  p {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .round-icon {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    margin: -3rem auto 0;
+    border: 0.25rem #FAFAFF solid;
+    box-shadow: 0 0 0.125rem 0rem rgba(0,0,0,0.6);
+  span {
+    padding-top: 0.8rem;
+  }
+}
 }
 
-html, body {
-  scroll-behavior: smooth;
-}
-.how-all h2 {
-font-size: 20px;
-}
-.how-all h4 {
-font-size: 24px;
-text-align: center;
-}
-.how-all p {
-font-family: 'Open Sans';
-font-size: 14px;
-text-align: center;
-}
-.how-to {
-width: 16rem;
-margin-right: 2rem;
-margin-left: 2rem;
-margin-bottom: 1rem;
-border: 1px #D7D6D2 solid;
-padding: 0.5rem 0.5rem;
-border-radius: 0.2rem;
-}
-.how-title {
-margin-top: 1rem;
-padding-bottom: 1rem;
-}
-.arrow-down {
-color: #8A8881;
-}
-.arrow-down p:hover {
-color: #8A8881;
-}
-.arrow-down p:before {
-color: #8A8881;
-}
-.arrow-down p:hover {
-text-decoration: none;
-}
-.arrow-link:hover {
-color: gray;
+.search-banner {
+  background-color: #E7E6E4;
+  padding: 2rem;
 }

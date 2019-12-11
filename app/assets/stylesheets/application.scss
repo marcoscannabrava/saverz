@@ -12,6 +12,10 @@
 @import "components/index";
 @import "pages/index";
 
+@import 'easy-autocomplete/dist/easy-autocomplete';
+@import 'easy-autocomplete/dist/easy-autocomplete.themes';
+
+
 html {
   background: url(images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;

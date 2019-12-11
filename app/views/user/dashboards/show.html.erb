@@ -16,6 +16,23 @@
             <%= @supported_name %></h2>
           <p class="card-text" style="font-family: 'Open Sans';">This field support studies on <%= @supported_description.truncate(150) %></p>
         </div>
+<!-- Circle counter -->
+          <div class="container-circle">
+              <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                      <div class="progress yellow">
+                          <span class="progress-left">
+                              <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                              <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">75%</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+<!-- Circle counter end -->
       </div>
     </div>
   </div>
@@ -24,7 +41,13 @@
 <!-- Companies here  -->
 <div class="card-stores">
     <div class="text-center">
-      <h1 class="header1">Stores</h1>
+      <h1 class="header1 position-relative">
+        Stores
+        <div class="arrow-tag tag-style">
+          <p>Buying from<br>these stores will<br>help research</p>
+          <%= icon('fas', 'chevron-down') %>
+        </div>
+      </h1>
     </div>
   <br>
   <br>
@@ -32,78 +55,3 @@
 
   <%= render 'shared/companies_cards' %>
 </div>
-
-<style>
-  .header1 {
-    color: #292B3B;
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 2.5rem;
-    border-color: #FF6100;
-    border-bottom:
-  }
-
-  .btn-change-field {
-    color: white;
-    background-color: #FF6100;
-    font-family: "Montserrat";
-    font-weight: 700;
-    border-color: #FF6100;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    border-radius: 3px;
-  }
-  .btn-change-field:hover {
-    color: #ffffff !important;
-    background: #F98B4F;
-    border-color: #F98B4F !important;
-    transition: all 0.4s ease 0s;
-  }
-
-  .hover-bump-left {
-    transition: transform 0.25s;
-  }
-
-  .btn:hover .hover-bump-left {
-    transform: translateX(-8px);
-  }
-  .card-design {
-  width: 14em;
-  border-radius: 1em;
-  box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
-  opacity: 0.7;
-  }
-  .body-text {
-    color: #292B3B;
-    text-justify: left;
-    font-family: "Montserrat";
-    -webkit-box-flex: 1;
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 0 1.25rem 1.25rem;
-  }
-  .title-field {
-    font-family: "Montserrat";
-    font-weight: 550;
-    font-size: 2.5rem;
-    text-align: left;
-  }
-  .title-name {
-    font-family: "Montserrat";
-    font-weight: 350;
-    font-size: 2rem;
-    text-align: left;
-  }
-  .card-body p {
-    font-family: "Montserrat";
-    font-size: 1rem;
-  }
-  .card-stores {
-  -webkit-box-flex: 1;
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: 1.25rem;
-  box-sizing: border-box;
-  border-color: #FF6100;
-  }
-
-</style>

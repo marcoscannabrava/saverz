@@ -1,0 +1,43 @@
+html, body {
+  scroll-behavior: smooth;
+}
+.how-all h2 {
+font-size: 20px;
+}
+.how-all h4 {
+font-size: 24px;
+text-align: center;
+}
+.how-all p {
+font-family: 'Open Sans';
+font-size: 14px;
+text-align: center;
+}
+.how-to {
+width: 16rem;
+margin-right: 2rem;
+margin-left: 2rem;
+margin-bottom: 1rem;
+border: 1px #D7D6D2 solid;
+padding: 0.5rem 0.5rem;
+border-radius: 0.2rem;
+}
+.how-title {
+margin-top: 1rem;
+padding-bottom: 1rem;
+}
+.arrow-down {
+color: #8A8881;
+}
+.arrow-down p:hover {
+color: #8A8881;
+}
+.arrow-down p:before {
+color: #8A8881;
+}
+.arrow-down p:hover {
+text-decoration: none;
+}
+.arrow-link:hover {
+color: gray;
+}

@@ -1,6 +1,6 @@
 <div class="search position-relative">
   <%= form_tag new_field_choice_path, method: :get do %>
-    <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "FIND YOUR RESEARCHER" %>
+    <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Find your researcher" %>
     <%= button_tag(type: "submit", class: "search-btn p-0 btn btn-light position-absolute") do %>
       <i class="fas fa-search"></i>
     <% end %>
@@ -9,7 +9,7 @@
 
 
 <% if false %>
-  <input class="form-control" type="text" placeholder="FIND YOUR RESEARCH FIELD" aria-label="Search">
+  <input class="form-control" type="text" placeholder="Find your researcher" aria-label="Search">
   <button type="button" class="p-0 btn btn-light position-absolute">
   </button>
   <%= submit_tag "", class: "search-btn p-0 btn btn-light position-absolute" do %>

@@ -1,20 +1,28 @@
-.main-profile {
-  .btn {
-    border: none;
-    font-family: "Montserrat";
-    font-weight: 300;
-    background-color: #FF6100;
-    margin-left: -1rem;
-    width: 24rem;
-    color: white;
-    border-color: #eee;
-    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
-    border-radius: 0.125rem;
-  }
-  .btn:hover {
-    font-weight: 500;
-    opacity: 0.9;
-    transition: all 0.2s ease 0s;
-  }
+.container {
+  width: 350px;
+  text-align: justify-content-center;
+}
+.btn-chrome {
+  color: white;
+  background-color: #FF6100;
+  border-color: #FF6100;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  border-radius: 3px;
 }
 
+.btn-chrome:hover {
+color: #ffffff !important;
+background: #F98B4F;
+border-color: #F98B4F !important;
+transition: all 0.4s ease 0s;
+}
+
+.line {
+  border-color: #FF6100;
+  border-width: 2px;
+}
+.modal-content {
+  border: none;
+  border-radius: 0.25rem;
+  width: 90%;
+}

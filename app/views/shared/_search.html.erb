@@ -3,14 +3,22 @@
     <%= text_field_tag :query,
                        params[:query],
                        class: "form-control",
+                        autocomplete: 'off',
                        'data-filter': @researchers.to_json,
                        placeholder: "FIND YOUR RESEARCHER" %>
     <%= button_tag(type: "submit", class: "search-btn p-0 btn btn-light position-absolute") do %>
       <i class="fas fa-search"></i>
     <% end %>
   <% end %>
-</div>
 
+  <div class="search-name-list hidden">
+      <% @researchers.each do |researcher_name| %>
+        <div data-name='<%= researcher_name %>' class="search-name-item hidden">
+          <%= link_to researcher_name, researcher_path(Researcher.where(full_name: researcher_name).ids) %>
+        </div>
+      <% end %>
+  </div>
+</div>
 
 <% if false %>
   <input class="form-control" type="text" placeholder="Find your researcher" aria-label="Search">
@@ -20,3 +28,38 @@
     <i class="fas fa-search"></i>
   <% end %>
 <% end%>
+
+<script>
+  const query = document.querySelector('#query')
+  query.addEventListener('keyup', (event) => {
+    const filter = event.currentTarget.value;
+    const searchNameItems = document.querySelectorAll('.search-name-item')
+    const searchNameList = document.querySelector('.search-name-list')
+
+    if (filter == '') {
+      searchNameList.classList.add('hidden');
+    } else {
+      searchNameList.classList.remove('hidden');
+      // carregar todos os elementos que comecam com filter
+      searchNameItems.forEach((searchNameItem) => {
+        // se o searchNameItem.data.name comecar com filter
+        if (searchNameItem.dataset.name.toLowerCase().startsWith(filter.toLowerCase())) {
+          searchNameItem.classList.remove('hidden');
+        } else {
+          searchNameItem.classList.add('hidden');
+        }
+      });
+    }
+  });
+
+  const filteredResearchers = (researchers, filterString) => {
+    return researchers.filter((researcher) => researcher.startsWith(filterString));
+  }
+</script>
+
+
+
+
+
+
+

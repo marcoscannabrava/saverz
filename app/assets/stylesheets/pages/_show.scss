@@ -65,14 +65,21 @@
 }
 
 .card-body {
-    h5 {
+  width: 32rem;
+  .card-title {
       font-family: "Montserrat";
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+    }
+  .card-text {
+    font-family: "Montserrat";
+    font-size: 0.8rem;
   }
 }
 
-.card-body p {
+.all-articles {
   font-family: "Montserrat";
-  font-size: 0.7rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }

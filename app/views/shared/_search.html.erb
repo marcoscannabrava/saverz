@@ -3,6 +3,7 @@
     <%= text_field_tag :query,
                        params[:query],
                        class: "form-control",
+                       'data-filter': '',
                        'data-researchers': @researchers.to_json,
                        placeholder: "FIND YOUR RESEARCHER" %>
     <%= button_tag(type: "submit", class: "search-btn p-0 btn btn-light position-absolute") do %>
@@ -20,3 +21,16 @@
     <i class="fas fa-search"></i>
   <% end %>
 <% end%>
+
+
+<script>
+  `sujao mas depois a gente exporta pra um arquivo.js`
+  const query = document.getElementById('query')
+  query.addEventListener('keyup', (event) => {
+    const searchText = event.currentTarget.value
+
+    console.log(searchText)
+    console.log(event.currentTarget.dataset.filter)
+    console.log(event.currentTarget.dataset.researchers)
+  });
+</script>

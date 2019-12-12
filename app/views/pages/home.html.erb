@@ -1,48 +1,55 @@
 <%= render 'shared/banner' %>
 
-<%# ------------------- HOW TO SECTION ------------------- %>
 <div class="home-container">
   <div class="row d-flex justify-content-center pt-3">
     <h2>How does it work?</h2>
   </div>
-  <div class="row how-works pt-3">
-    <div class="col-md-2"></div>
-    <div class="card-how-works col-md-2 justify-content-center mr-3">
-      <div class="round-icon d-flex justify-content-center">
-        <span class="fa fa-3x fa-search d-flex justify-content-center"></span>
+
+  <div class="container">
+    <div class="row how-works pt-3">
+      <div class="col-md-3 px-3">
+        <div class="card-how-works justify-content-center">
+          <div class="round-icon d-flex justify-content-center">
+            <span class="fa fa-2x fa-search d-flex justify-content-center"></span>
+          </div>
+          <h4 class="d-flex justify-content-center">Choose a Research</h4>
+          <p class="d-flex justify-content-center">Choose a researcher or a field to support everytime you purchase.</p>
+        </div>
       </div>
-      <h4 class="d-flex justify-content-center">Choose a Research</h4>
-      <p class="d-flex justify-content-center">Choose a researcher or a field to support everytime you purchase.</p>
-    </div>
 
-    <div class="card-how-works col-md-2 justify-content-center ml-3 mr-3">
-      <div class="round-icon d-flex justify-content-center">
-        <span class="fa fa-3x fa-store d-flex justify-content-center"></span>
+      <div class="col-md-3 px-3">
+        <div class="card-how-works justify-content-center">
+          <div class="round-icon d-flex justify-content-center">
+            <span class="fa fa-2x fa-store d-flex justify-content-center"></span>
+          </div>
+          <h4 class="d-flex justify-content-center">Select a Store</h4>
+          <p class="d-flex justify-content-center">Select the store you like and check all of their coupons.</p>
+        </div>
       </div>
-      <h4 class="d-flex justify-content-center">Select a Store</h4>
-      <p class="d-flex justify-content-center">Select the store you like and check all of their coupons.</p>
-    </div>
 
-    <div class="card-how-works col-md-2 justify-content-center ml-3 mr-3">
-      <div class="round-icon d-flex justify-content-center">
-        <span class="fa fa-3x fa-tags d-flex justify-content-center"></span>
+      <div class="col-md-3 px-3">
+        <div class="card-how-works justify-content-center">
+          <div class="round-icon d-flex justify-content-center">
+            <span class="fa fa-2x fa-tags d-flex justify-content-center"></span>
+          </div>
+          <h4 class="d-flex justify-content-center">Save Money</h4>
+          <p class="d-flex justify-content-center">Check all cupons avaiable that will help you and your researcher or field.</p>
+        </div>
       </div>
-      <h4 class="d-flex justify-content-center">Save Money</h4>
-      <p class="d-flex justify-content-center">Check all cupons avaiable that will help you and your researcher or field.</p>
-    </div>
 
-
-    <div class="card-how-works col-md-2 justify-content-center ml-3">
-      <div class="round-icon d-flex justify-content-center">
-        <span class="fa fa-3x fa-donate d-flex justify-content-center"></span>
+      <div class="col-md-3 px-3">
+        <div class="card-how-works justify-content-center">
+          <div class="round-icon d-flex justify-content-center">
+            <span class="fa fa-2x fa-donate d-flex justify-content-center"></span>
+          </div>
+          <h4 class="d-flex justify-content-center">Researcher Gains</h4>
+          <p class="d-flex justify-content-center">A percentage of your purchase goes to the researcher or field.</p>
+        </div>
       </div>
-      <h4 class="d-flex justify-content-center">Researcher Gains</h4>
-      <p class="d-flex justify-content-center">A percentage of your purchase goes to the researcher or field.</p>
     </div>
-
-    <div class="col-md-2"></div>
   </div>
-<%# ------------------- HOW TO SECTION (END) ------------------- %>
+</div>
+
 <a id="target"><br></a>
 
 <div class="text-center mt-5">
@@ -55,13 +62,18 @@
     <%= render 'shared/search' %>
   </div>
 </div>
-<%# ------------------- SEARCH RESEARCHER (END) ------------------- %>
 
 <div class="text-center mt-5">
   <h2>... Or Choose a UN Goal and Fund Research in That Area</h2>
 </div>
-<div class="row grid p-5">
-  <% @fields.each do |field| %>
-    <%= render "shared/popup_fields", field: field %>
-  <% end %>
+
+<div class="container">
+  <div class="row p-5">
+    <% @fields.each do |field| %>
+      <div class="col-md-3">
+        <%= render "shared/popup_fields", field: field %>
+      </div>
+    <% end %>
+  </div>
 </div>
+

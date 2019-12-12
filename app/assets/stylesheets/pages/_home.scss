@@ -1,17 +1,27 @@
 // // Specific CSS for your home-page
+html, body {
+  scroll-behavior: smooth;
+}
+
 .card-how-works {
   box-shadow: 0 0.125rem 0.25rem 0rem rgba(0,0,0,0.6);
   margin-top: 3rem;
   border-radius: 0.2rem;
-  // margin-top: 2rem;
+  width: 14.5rem;
+  padding: 0.125rem;
   h4 {
     margin-top: 1rem;
     font-size: 1.25rem;
   }
   p {
     font-family: 'Montserrat';
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-align: center;
+    text-align: center;
+    padding: 0 0.3rem;
+  }
+  span {
+    padding-top: 1rem;
   }
   .round-icon {
     border-radius: 50%;
@@ -21,10 +31,7 @@
     margin: -3rem auto 0;
     border: 0.25rem #FAFAFF solid;
     box-shadow: 0 0 0.125rem 0rem rgba(0,0,0,0.6);
-  span {
-    padding-top: 0.8rem;
   }
-}
 }
 
 .search-banner {

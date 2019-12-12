@@ -4,7 +4,8 @@
   overflow: hidden;
   background: white;
   box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
-  h2 {
+  input {
+    width: 100%;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -12,8 +13,6 @@
     margin-top: 6px;
     padding-bottom: 4px;
     padding-top: 4px;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
     border: 2px dashed #8A8881;
     border-radius: 0px 6px 0px 6px;
   }
@@ -24,6 +23,7 @@
     margin-bottom: 6px;
   }
   i {
+    color: #8A8881;
     font-size: 20px;
     opacity: .7;
     position: absolute;
@@ -38,7 +38,6 @@
     right: 3rem;
   }
   .link-ico {
-    color: #8A8881;
     right: 0.5rem;
   }
 }

@@ -1,5 +1,5 @@
 .icon {
-  width: 100%;
+  width: 45%;
   border-radius: 1em;
   box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
 }
@@ -45,4 +45,14 @@ h4 {
     border-radius: 1em;
     max-width: 100%;
     height: auto;
+}
+
+.notice {
+  text-align: center;
+  width: 50%;
+  margin: 0em 1em;
+}
+
+.field-card-modal {
+  width: 35em;
 }

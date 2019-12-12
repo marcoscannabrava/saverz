@@ -1,19 +1,18 @@
 <!-- Supported Cause  -->
-<div class="container bootstrap-field-container">
+<div class="container bootstrap-field-container field-size">
   <div class="field-container d-flex">
       <div class="field-image mr-3">
         <%= cl_image_tag @supported_choice.photo, class: "card-img img-thumbnail card-design", alt: @supported_choice.photo %>
         <br>
         <br>
-        <a class="mt-2 btn btn-change-field btn-block" href="/"><i class="fa fa-chevron-circle-left hvr-icon hover-bump-left"></i> &nbsp; Change Field
-
-        </a>
       </div>
       <div class="field-description flex-grow">
         <div class="card-body">
-          <h3 class="card-title"><%= @title %>:
+          <h3 class="card-title"><%= @title %>
             <br>
             <%= @supported_name %></h3>
+        <a class="mt-2 btn btn-change-field btn-block" href="/"><i class="fa fa-chevron-circle-left hvr-icon hover-bump-left"></i> &nbsp; Change Field
+        </a>
           <p class="card-text">This field support studies on <%= @supported_description.truncate(150) %></p>
         </div>
 <!-- Circle counter -->

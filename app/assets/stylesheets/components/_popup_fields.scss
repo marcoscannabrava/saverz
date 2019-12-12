@@ -1,48 +1,74 @@
 .icon {
-  width: 100%;
   border-radius: 1em;
-  box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
+
+  img {
+    width: 34rem;
+    height: 10rem;
+  }
 }
+
+.support-or-cancel {
+  .btn-support {
+    font-family: "Montserrat";
+    padding: 0.6rem 12rem;
+    font-weight: 600;
+    color: #FF7D2E;
+    margin: 0.3rem 0 0.5rem;
+    border-radius: 0.125rem;
+    border: 0.05rem #FF7D2E solid;
+  }
+  .btn-support:hover {
+    background-color: #FF7D2E;
+    color: white;
+  }
+  a {
+    color: black;
+    padding-top: 0.5rem;
+    font-family: "Montserrat";
+    padding: 0.6rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+  a:hover {
+    color: #FF7D2E;
+  }
+  a:linked {
+    color: #FF7D2E;
+  }
+}
+
+.support-img-text {
+  margin-bottom: 1rem;
+}
+
 .pop-title {
   color: #292B3B;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
+  padding: 0 1rem;
 }
+
 .pop-text {
   color: #292B3B;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 0 1rem;
 }
 
-h4 {
-  margin-bottom: 0.5rem;
-  font-family: "Montserrat";
-  font-weight: 500;
-  line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
 .field-pic {
-    padding: rem;
-    background-color: #F4F4F4;
-    border: 1px solid #dee2e6;
-    border-radius: 1em;
-    max-width: 100%;
-    height: auto;
+  background-color: #F4F4F4;
+  border: 1px solid #dee2e6;
+  border-radius: 1em;
+  max-width: 100%;
+  height: auto;
+}
+
+.notice {
+  width: 70rem;
+  margin-left: 0.5rem;
 }

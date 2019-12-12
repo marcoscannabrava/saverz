@@ -6,8 +6,8 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body text-center">
-        <div class="d-flex">
-          <div class="icon text-danger d-flex">
+        <div class="support-img-text d-flex">
+          <div class="icon">
             <%= cl_image_tag field.photo, class: "card-img img-thumbnail", alt: field.photo %>
           </div>
           <div class="notice d-flex flex-column">
@@ -15,11 +15,11 @@
             <p class="pop-text">This field support studies on <%= field.descritption %></p>
           </div>
         </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <%= button_to "#{supported_choices_path}?field_id=#{field.id}", method: :post, class:"btn btn-danger" do %>
-              Support
-            <% end %>
+        <div class="support-or-cancel justify-content-center  ">
+          <%= button_to "#{supported_choices_path}?field_id=#{field.id}", method: :post, class:"btn-support" do %>
+            Support
+          <% end %>
+          <%= link_to 'Choose another UN Goal', root_path %>
         </div>
       </div>
     </div>

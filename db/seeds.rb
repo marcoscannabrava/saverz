@@ -24,7 +24,7 @@ un_goals = [
 ]
 
 un_goals.each do |goal|
-  Field.create!(name: goal[0], remote_photo_url: goal[1], descritption: goal[2])
+  Field.create!(name: goal[0], remote_photo_url: goal[1], descritption: goal[2], index: goal[3])
 end
 
 

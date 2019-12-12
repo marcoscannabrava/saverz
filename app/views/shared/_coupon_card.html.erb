@@ -1,17 +1,9 @@
 
-<div class="card-product mb-4">
-  <div class="card-product-tag">
-    <h2 class="my-auto">Coupon Code</h2>
-    <h3 class="my-auto"><%= coupon.code %></h3>
-  </div>
-  <div class="card-product-infos">
-    <h2><%= coupon.title %></h2>
-  </div>
-  <div class="card-product-button">
-    <%= cl_image_tag company.logo %>
-    <%= link_to  coupon.tracking_url, class:"btn btn-secondary" do %>
-      Go To Store
-    <% end %>
-  </div>
+<div class="coupon-card mb-4">
+  <h2><%= coupon.code %></h2>
+  <p><%= coupon.title %></p>
+  <i class="fas fa-copy copy-ico"></i>
+  <%= link_to  coupon.tracking_url, target: :_blank do %><i class="fas fa-external-link-alt link-ico"></i><% end %>
 </div>
+
 

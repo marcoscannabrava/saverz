@@ -1,89 +1,59 @@
 <!-- Supported Cause  -->
-<div class="container bootstrap-field-container">
+<div class="container bootstrap-field-container field-size">
   <div class="field-container d-flex">
       <div class="field-image mr-3">
         <%= cl_image_tag @supported_choice.photo, class: "card-img img-thumbnail card-design", alt: @supported_choice.photo %>
         <br>
         <br>
-        <a class="mt-2 btn btn-change-field btn-block" href="/"><i class="fa fa-chevron-circle-left hvr-icon hover-bump-left"></i> &nbsp; Change Field
-
-        </a>
       </div>
       <div class="field-description flex-grow">
         <div class="card-body">
-          <h3 class="card-title"><%= @title %>:
+          <h3 class="card-title"><%= @title %>
             <br>
-            <%= @supported_name %></h2>
-          <p class="card-text" style="font-family: 'Open Sans';">This field support studies on <%= @supported_description.truncate(150) %></p>
+            <%= @supported_name %></h3>
+        <a class="mt-2 btn btn-change-field btn-block" href="/"><i class="fa fa-chevron-circle-left hvr-icon hover-bump-left"></i> &nbsp; Change Field
+        </a>
+          <p class="card-text">This field support studies on <%= @supported_description.truncate(150) %></p>
         </div>
+<!-- Circle counter -->
+          <div class="container-circle">
+              <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                      <div class="progress yellow">
+                          <span class="progress-left">
+                              <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                              <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">R$ 100</di>
+                      </div>
+                  </div>
+              </div>
+          </div>
+<!-- Circle counter end -->
+<div>
+  <h2 class="circle-text">Your donation</h2>
+</div>
       </div>
     </div>
   </div>
 </div>
-
+<hr>
 <!-- Companies here  -->
+<div class="card-stores">
+    <div class="text-center">
+      <h1 class="header1 position-relative">
+        Stores
+        <div class="arrow-tag tag-style">
+          <p>Buying from<br>these stores will<br>help research</p>
+          <%= icon('fas', 'chevron-down') %>
+        </div>
+      </h1>
+    </div>
+  <br>
+  <br>
+  <br>
 
-<br>
-<div class="text-center">
-  <h1 class="header1">Stores</h1>
-</div>
-<br>
-<br>
-
-<div class="company-list">
   <%= render 'shared/companies_cards' %>
 </div>
-<br>
-<br>
-<br>
-<br>
-
-<style>
-  .company-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-  }
-
-  .header1 {
-    color: #292B3B;
-  }
-
-  .btn-change-field {
-    color: white;
-    background-color: #FF6100;
-    border-color: #FF6100;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    border-radius: 3px;
-  }
-  .btn-change-field:hover {
-    color: #ffffff !important;
-    background: #F98B4F;
-    border-color: #F98B4F !important;
-    transition: all 0.4s ease 0s;
-  }
-
-  .hover-bump-left {
-    transition: transform 0.25s;
-  }
-
-  .btn:hover .hover-bump-left {
-    transform: translateX(-8px);
-  }
-  .card-design {
-  width: 14em;
-  border-radius: 1em;
-  box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.3);
-  opacity: 0.7;
-  }
-  .card-title {
-    color: #292B3B;
-    text-justify: left;
-
-  }
-  .card-text {
-    color: #292B3B;
-    text-align: justify;
-    text-justify: left;
-  }
-</style>

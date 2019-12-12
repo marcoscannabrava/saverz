@@ -1,6 +1,6 @@
-<div class="search-more">
+<div class="search-more-researcher">
   <%= form_tag new_supported_choice_path, method: :get do %>
-    <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "FIND OTHER RESEARCHER TO SUPPORT" %>
+    <%= text_field_tag :query, "", class: "form-control", placeholder: "FIND OTHER RESEARCHER TO SUPPORT" %>
     <%= button_tag(type: "submit", class: "search-btn pt-2 px-4 btn btn-light position-absolute") do %>
       <i class="fas fa-search"></i>
     <% end %>

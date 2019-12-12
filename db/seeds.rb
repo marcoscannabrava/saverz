@@ -5,22 +5,22 @@ Article.destroy_all
 Researcher.destroy_all
 
 un_goals = [
-  ["No Poverty", "app/assets/images/un-goal01.jpg", "Economic growth must be inclusive to provide sustainable jobs and promote equality." ],
-  ["Zero Hunger", "app/assets/images/un-goal02.jpg", "The food and agriculture sector offers key solutions for development, and is central for hunger and poverty eradication."],
-  ["Good Health and Well-being", "app/assets/images/un-goal03.jpg", "Ensuring healthy lives and promoting the well-being for all at all ages is essential to sustainable development."],
-  ["Quality Education", "app/assets/images/un-goal04.jpg", "Obtaining a quality education is the foundation to improving people’s lives and sustainable development."],
-  ["Gender Equality", "app/assets/images/un-goal05.jpg" ,"Gender equality is not only a fundamental human right, but a necessary foundation for a peaceful, prospero and sustainable world"],
-  ["Clean Water and Sanitation","app/assets/images/un-goal06.jpg" ,"Clean, accessible water for all is an essential part of the world we want to live in."],
-  ["Affordable and Clean Energy", "app/assets/images/un-goal07.jpg" ,"Energy is central to nearly every major challenge and opportunity."],
-  ["Decent Work and Economic Growth", "app/assets/images/un-goal08.jpg" ,"Sustainable economic growth will require societies to create the conditions that allow people to have quality jobs."],
-  ["Industry, Innovation, and Infrastructure", "app/assets/images/un-goal09.jpg" ,"Investments in infrastructure are crucial to achieving sustainable development."],
-  ["Reducing Inequality", "app/assets/images/un-goal10.jpg" ,"To reduce inequalities, policies should be universal in principle, paying attention to the needs of disadvantaged and marginalized populations."],
-  ["Sustainable Cities and Communities", "app/assets/images/un-goal11.jpg" ,"There needs to be a future in which cities provide opportunities for all, with access to basic services, energy, housing, transportation and more."],
-  ["Responsible Consumption and Production", "app/assets/images/un-goal12.jpg" ,"Responsible Production and Consumption"],
-  ["Climate Action", "app/assets/images/un-goal13.jpg" ,"Climate change is a global challenge that affects everyone, everywhere."],
-  ["Life Below Water", "app/assets/images/un-goal14.jpg" ,"Careful management of this essential global resource is a key feature of a sustainable future."],
-  ["Life On Land", "app/assets/images/un-goal15.jpg" ,"Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss"],
-  ["Peace, Justice, and Strong Institutions", "app/assets/images/un-goal16.jpg" ,"Access to justice for all, and building effective, accountable institutions at all levels."],
+  ["No Poverty", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576102968/Saverz/yebhxrbrbqlog8elf1q6.jpg", "Economic growth must be inclusive to provide sustainable jobs and promote equality.", 1],
+  ["Zero Hunger", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576102976/Saverz/b0ick7wo9c6sgrwgxwc1.jpg", "The food and agriculture sector offers key solutions for development, and is central for hunger and poverty eradication.", 2],
+  ["Good Health and Well-being", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576102983/Saverz/ptbqxux7oczp2ggtzn0s.jpg", "Ensuring healthy lives and promoting the well-being for all at all ages is essential to sustainable development.", 3],
+  ["Quality Education", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576102987/Saverz/hg3lxiwog1h29rgmkkbu.jpg", "Obtaining a quality education is the foundation to improving people’s lives and sustainable development.", 4],
+  ["Gender Equality", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576102991/Saverz/p44m4d2jptqp9ltlrwmg.jpg" ,"Gender equality is not only a fundamental human right, but a necessary foundation for a peaceful, prospero and sustainable world", 5],
+  ["Clean Water and Sanitation","https://res.cloudinary.com/mpc-cloud/image/upload/v1576102996/Saverz/qzrcxayzvcqij0irtvsf.jpg" ,"Clean, accessible water for all is an essential part of the world we want to live in.", 6],
+  ["Affordable and Clean Energy", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103000/Saverz/zdmviggl2pwn9k1ve20f.jpg" ,"Energy is central to nearly every major challenge and opportunity.", 7],
+  ["Decent Work and Economic Growth", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103005/Saverz/abxsdmenlceflrba4kkw.jpg" ,"Sustainable economic growth will require societies to create the conditions that allow people to have quality jobs.", 8],
+  ["Industry, Innovation, and Infrastructure", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103009/Saverz/a4afelx35lbixpesyu9n.jpg" ,"Investments in infrastructure are crucial to achieving sustainable development.", 9],
+  ["Reducing Inequality", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103012/Saverz/edstj0e2fxiiww7gxzux.jpg" ,"To reduce inequalities, policies should be universal in principle, paying attention to the needs of disadvantaged and marginalized populations.", 10],
+  ["Sustainable Cities and Communities", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103014/Saverz/dr12aqf0enjwuhowniml.jpg" ,"There needs to be a future in which cities provide opportunities for all, with access to basic services, energy, housing, transportation and more.", 11],
+  ["Responsible Consumption and Production", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103018/Saverz/l825svcmr9ynbwh6pquk.jpg" ,"Responsible Production and Consumption", 12],
+  ["Climate Action", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103021/Saverz/qu6d1mbkp4itwbvaszmb.jpg" ,"Climate change is a global challenge that affects everyone, everywhere.", 13],
+  ["Life Below Water", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103023/Saverz/zrhmvgtkw3ksvan9ufxp.jpg" ,"Careful management of this essential global resource is a key feature of a sustainable future.", 14],
+  ["Life On Land", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103026/Saverz/dywnkjj7sg7roi7tlmy9.jpg" ,"Sustainably manage forests, combat desertification, halt and reverse land degradation, halt biodiversity loss", 15],
+  ["Peace, Justice, and Strong Institutions", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103030/Saverz/r1ed8r7ltr4e2e6klrl5.jpg" ,"Access to justice for all, and building effective, accountable institutions at all levels.", 16],
 ]
 
 un_goals.each do |goal|

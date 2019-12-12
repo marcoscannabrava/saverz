@@ -29,6 +29,8 @@
 .btn-change-field {
   font-family: "Montserrat";
   font-weight: 500;
+  color: #555;
+  border-color: #eee;
 }
 .btn-change-field:hover {
   color: #FF6100 !important;
@@ -41,4 +43,9 @@
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 2rem;
+}
+
+.card-design {
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px 0px rgba(130, 130, 130, 0.3);
 }

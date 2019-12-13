@@ -6,8 +6,7 @@
   <%= cl_image_tag @company.logo %>
 </div>
 
-<div style="height: 10px;"></div>
-<p class="align-self-center mx-3 my-auto"> Copy the Coupon and Click on the Link!</p>
+<p class="align-self-center mx-3 my-2" style="font-size: 14px;"> Copy the Code & Click on the Link.</p>
 <div class="mx-3 coupon-container">
   <% @coupons.each do |coupon| %>
     <%= render "shared/coupon_card", coupon: coupon %>

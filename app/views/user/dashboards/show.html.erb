@@ -4,10 +4,6 @@
     <div class="col-3">
       <%= cl_image_tag @supported_choice.photo, class: "card-img img-thumbnail card-design", alt: @supported_choice.photo %>
       <div class="position-relative">
-        <div class="arrow-tag tag-style">
-          <p>Buying from<br>these stores will<br>help research</p>
-          <%= icon('fas', 'chevron-down') %>
-        </div>
       </div>
     </div>
      <div class="col-md-7">
@@ -27,7 +23,7 @@
 
 <div class="card-stores py-5">
     <div class="text-center">
-      <h1 class="header1 position-relative">Stores</h1>
+      <h1 class="header1 position-relative">Buying from these stores will help research</h1>
     </div>
     <div class="card-companies-all">
       <%= render 'shared/companies_cards' %>

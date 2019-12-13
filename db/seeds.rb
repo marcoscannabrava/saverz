@@ -30,7 +30,7 @@ end
 
 researchers = [
   ["Adriana Honor", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg", "Adriana Honor is 28 years-old and is graduated in Bussiness School. She worked in many companies and started to realize that people don't really pay attention to the world. That was the breakpoint for her, where she decided to quit her job and start a new life looking at others."],
-  ["Hugo Hunter", "UERJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1575645747/Saverz/xr0ex38b5b7kba6uvx97.jpg", "Bio about you here"],
+  ["Hugo Hunter", "UERJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576103030/Saverz/r1ed8r7ltr4e2e6klrl5.jpg", "Bio about you here"],
 ]
 
 researchers.each do |researcher|

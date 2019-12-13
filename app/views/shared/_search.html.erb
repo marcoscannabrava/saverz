@@ -1,5 +1,8 @@
 <div class="search position-relative">
-  <%= form_tag researcher_path(Researcher.first.id), method: :get do %>
+  <% @researchers.each do |researcher_name| %>
+    <% @researcher_page = Researcher.where(full_name: researcher_name).ids %>
+  <% end %>
+  <%= form_tag researcher_path(@researcher_page), method: :get do %>
     <%= text_field_tag :query,
                        params[:query],
                        class: "form-control",
@@ -9,16 +12,18 @@
     <%= button_tag(type: "submit", class: "search-btn p-0 btn btn-light position-absolute") do %>
       <i class="fas fa-search"></i>
     <% end %>
+    <div class="search-name-list hidden">
+        <% @researchers.each do |researcher_name| %>
+          <div data-name='<%= researcher_name %>' class="search-name-item hidden">
+            <% photo = Researcher.where(full_name: researcher_name).first.photo %>
+            <%= cl_image_tag photo %>
+            <%= link_to researcher_name, researcher_path(Researcher.where(full_name: researcher_name).ids) %>
+          </div>
+        <% end %>
+    </div>
+  </div>
   <% end %>
 
-  <div class="search-name-list hidden">
-      <% @researchers.each do |researcher_name| %>
-        <div data-name='<%= researcher_name %>' class="search-name-item hidden">
-          <%= link_to researcher_name, researcher_path(Researcher.where(full_name: researcher_name).ids) %>
-        </div>
-      <% end %>
-  </div>
-</div>
 
 <% if false %>
   <input class="form-control" type="text" placeholder="Find your researcher" aria-label="Search">

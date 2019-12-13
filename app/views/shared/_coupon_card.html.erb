@@ -1,9 +1,31 @@
 
 <div class="coupon-card mb-4">
-  <h2><%= coupon.code %></h2>
+  <input type="text" id="<%= coupon.code %>-text" value="<%= coupon.code %>">
+  <!-- <h2 id="<%= coupon.code %>-text"><%= coupon.code %></h2> -->
   <p><%= coupon.title %></p>
-  <i class="fas fa-copy copy-ico"></i>
+  <i  id="<%= coupon.code %>-copy" class="fas fa-copy copy-ico"></i>
   <%= link_to  coupon.tracking_url, target: :_blank do %><i class="fas fa-external-link-alt link-ico"></i><% end %>
 </div>
 
+<!-- JS plugin to copy-paste the coupon code -->
+<script>
+document.getElementById(`<%= coupon.code %>-copy`).addEventListener('click', function(e){
+  document.getElementById(`<%= coupon.code %>-text`).select();
+  var copied;
+  copied = document.execCommand('copy');
+  try
+  {
+    copied = document.execCommand('copy');
+  } 
+  catch (ex)
+  {
+    copied = false;  
+  }
 
+  if(copied)
+  {
+    // Display the copied text message
+  }
+
+});
+</script>

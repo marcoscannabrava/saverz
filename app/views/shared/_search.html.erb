@@ -16,13 +16,17 @@
         <% @researchers.each do |researcher_name| %>
           <div data-name='<%= researcher_name %>' class="search-name-item hidden">
             <% photo = Researcher.where(full_name: researcher_name).first.photo %>
-            <%= cl_image_tag photo %>
-            <%= link_to researcher_name, researcher_path(Researcher.where(full_name: researcher_name).ids) %>
+            <div class="reseacher-name d-flex">
+              <%= link_to researcher_path(Researcher.where(full_name: researcher_name).ids) do %>
+                <%= cl_image_tag photo %>
+              <% end %>
+              <%= link_to researcher_name, researcher_path(Researcher.where(full_name: researcher_name).ids) %>
+            </div>
           </div>
         <% end %>
     </div>
-  </div>
   <% end %>
+</div>
 
 
 <% if false %>

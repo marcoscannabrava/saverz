@@ -29,22 +29,22 @@ end
 
 researchers = [
   ["Adriana Honor", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576247387/Saverz/student-photo_nygf2f.jpg", "Adriana Honor is 28 years-old and is graduated in Bussiness School. She worked in many companies and started to realize that people don't really pay attention to the world. That was the breakpoint for her, where she decided to quit her job and start a new life looking at others."],
-  ["Adelaide Smith", "UFRJ"],
-  ["Adrian King", "UFRJ"],
-  ["Adelaide Cox", "UFRJ"],
-  ["Adriel Yard", "UFRJ"],
-  ["Kramer", "Seinfeld Uni"],
-  ["George Costanza", "Seinfeld Uni"],
-  ["Elaine Benes", "Seinfeld Uni"],
-  ["Jerry Seinfeld", "Seinfeld Uni"]
+  ["Adelaide Smith", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,h_500,w_750/v1576252929/Saverz/adelaine-smith_uyhhrg.png"],
+  ["Adrian King", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,h_500,w_750/v1576253214/Saverz/adrian-king_sumscy.jpg"],
+  ["Adelaide Cox", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,w_750/v1576253212/Saverz/adelaide-cox_jlbevp.jpg"],
+  ["Adriel Yard", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,w_750/v1576253217/Saverz/adriel-yard_oup09h.jpg"],
+  ["Kramer", "Seinfeld Uni", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,h_500,w_750/v1576253224/Saverz/kramer_hvh7zo.jpg"],
+  ["George Costanza", "Seinfeld Uni", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,h_500,w_750/v1576253223/Saverz/george-costanza_lm3ixo.jpg"],
+  ["Elaine Benes", "Seinfeld Uni", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,h_500,w_750/v1576253221/Saverz/elaine-benes_cqj2wi.jpg"],
+  ["Jerry Seinfeld", "Seinfeld Uni", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/c_scale,h_500,w_750/v1576253223/Saverz/jerry-seinfeld_olbe4l.jpg"]
 ]
 
 researchers.each do |researcher|
   Researcher.create!(
-    full_name: researcher[0], 
-    university: researcher[1], 
-    lattes_link: researcher[2], 
-    remote_photo_url: researcher[3], 
+    full_name: researcher[0],
+    university: researcher[1],
+    lattes_link: researcher[2],
+    remote_photo_url: researcher[3],
     bio: researcher[4]
   )
 end

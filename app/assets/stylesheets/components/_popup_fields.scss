@@ -1,4 +1,6 @@
 .icon {
+  width: 200px;
+  height: 200px;
   border-radius: 1em;
 
   img {
@@ -71,4 +73,14 @@
 .notice {
   width: 70rem;
   margin-left: 0.5rem;
+}
+
+.notice {
+  text-align: center;
+  width: 50%;
+  margin: 0em 1em;
+}
+
+.field-card-modal {
+  width: 35em;
 }

@@ -22,6 +22,11 @@
   .arrow-down {
     color: white;
     opacity: 0.7;
+    transition: 0.2s;
+  }
+  .arrow-down:hover {
+    color: white;
+    opacity: 1;
   }
   .arrow-down p:hover {
     color: none;
@@ -36,7 +41,7 @@
   }
 
   .arrow-link:hover {
-    color: white;
+    text-decoration: none;
   }
 }
 

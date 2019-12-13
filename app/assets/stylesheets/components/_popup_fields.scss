@@ -1,10 +1,7 @@
 .icon {
+  width: 200px;
+  height: 200px;
   border-radius: 1em;
-
-  img {
-    width: 34rem;
-    height: 10rem;
-  }
 }
 
 .support-or-cancel {
@@ -13,9 +10,11 @@
     padding: 0.6rem 12rem;
     font-weight: 600;
     color: #FF7D2E;
+    background-color: white;
     margin: 0.3rem 0 0.5rem;
     border-radius: 0.125rem;
     border: 0.05rem #FF7D2E solid;
+    transition: 0.2s;
   }
   .btn-support:hover {
     background-color: #FF7D2E;
@@ -71,4 +70,14 @@
 .notice {
   width: 70rem;
   margin-left: 0.5rem;
+}
+
+.notice {
+  text-align: center;
+  width: 50%;
+  margin: 0em 1em;
+}
+
+.field-card-modal {
+  width: 35em;
 }

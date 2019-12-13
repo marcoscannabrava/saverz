@@ -28,16 +28,25 @@ un_goals.each do |goal|
 end
 
 researchers = [
-  ["Adriana Honor", "UFRJ", "http://lattes.cnpq.br/", "app/assets/images/student-photo.jpg", "Adriana Honor is 28 years-old and is graduated in Bussiness School. She worked in many companies and started to realize that people don't really pay attention to the world. That was the breakpoint for her, where she decided to quit her job and start a new life looking at others."],
+  ["Adriana Honor", "UFRJ", "http://lattes.cnpq.br/", "https://res.cloudinary.com/mpc-cloud/image/upload/v1576247387/Saverz/student-photo_nygf2f.jpg", "Adriana Honor is 28 years-old and is graduated in Bussiness School. She worked in many companies and started to realize that people don't really pay attention to the world. That was the breakpoint for her, where she decided to quit her job and start a new life looking at others."],
   ["Adelaide Smith", "UFRJ"],
   ["Adrian King", "UFRJ"],
   ["Adelaide Cox", "UFRJ"],
   ["Adriel Yard", "UFRJ"],
-  ["Alayna Flores", "UFRJ"],
+  ["Kramer", "Seinfeld Uni"],
+  ["George Costanza", "Seinfeld Uni"],
+  ["Elaine Benes", "Seinfeld Uni"],
+  ["Jerry Seinfeld", "Seinfeld Uni"]
 ]
 
 researchers.each do |researcher|
-  Researcher.create!(full_name: researcher[0], university: researcher[1], lattes_link: researcher[2], photo: researcher[3], bio: researcher[4])
+  Researcher.create!(
+    full_name: researcher[0], 
+    university: researcher[1], 
+    lattes_link: researcher[2], 
+    remote_photo_url: researcher[3], 
+    bio: researcher[4]
+  )
 end
 
 first_researcher = Researcher.first

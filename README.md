@@ -1,10 +1,8 @@
-# $averZ  
-
 ![$averZ Logo](/app/assets/images/saverz-v2.png)
 
 ### [saverz.org](https://www.saverz.org/)
 
-### Local Setup
+### Local Installation
 Run the following commands
 ```bash
 bundle && yarn
@@ -17,3 +15,10 @@ Open [http://localhost:3000/](http://localhost:3000/)
 ### Features
 - Scrape Discount Coupons From An Affiliate Program API
 - Automatically Redirect To E-Commerce Stores With Affiliate Tracking Links
+
+### Technology
+- Ruby on Rails
+- Bootstrap (HTML5/CSS3)
+- Authentication (Devise)
+- Photo Uploading (Cloudinary + Carrierwave)
+- Simple Form

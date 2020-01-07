@@ -2,7 +2,9 @@
 
 ![$averZ Logo](/app/assets/images/saverz-v2.png)
 
-### Setup
+### [saverz.org](https://www.saverz.org/)
+
+### Local Setup
 Run the following commands
 ```bash
 bundle && yarn

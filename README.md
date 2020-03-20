@@ -1,5 +1,9 @@
 ![$averZ Logo](/app/assets/images/saverz-v2.png)
 
+### Demo
+
+![Demo Video](https://marcoscannabrava.github.io/videos/saverz.mp4)
+
 ### [saverz.org](https://www.saverz.org/)
 
 ### Local Installation
